@@ -1,14 +1,15 @@
 import React from "react"
 import Layout from "../components/layout"
+import LogoLarge from '../components/svg/LogoLarge'
 
 // import SEO from "../components/seo"
 // <SEO title="Home" />
 
 const IndexPage = () => (
-  <Layout>
-    <h1>Landscape consultants</h1>
-    <p style={{fontSize: '40px', marginTop: '100px'}}>COMING SOON</p>
-  </Layout>
+  <div>
+    <LogoLarge />
+    <h1>BIM Landscape consultants</h1>
+  </div>
 )
 
 export default IndexPage
