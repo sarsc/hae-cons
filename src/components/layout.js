@@ -30,7 +30,11 @@ const Layout = ({ children }) => {
         //   padding: `0 1.0875rem 1.45rem`,
         // }}
   return (
-      <div>
+      <div
+      style={{
+          textAlign: `center`,
+          margin: `200px auto`,
+        }}>
         <main>{children}</main>
       </div>
   )
