@@ -1,0 +1,29 @@
+.formContainer, .inputContainer{
+  display: flex;
+  flex-direction: column;
+}
+
+.mainFormContainer {
+  display: flex;
+  align-items: center;
+  width: 50%;
+  padding: 100px;
+  border: 2px solid #42B390;
+  border-radius: 6px;
+}
+.formContainer {
+  width: 100%;
+}
+
+.inputContainer {
+  text-align: left;
+}
+
+.submitBtn {
+  background-color: #42B390;
+  border-radius: 4px;
+  border-color: #42B390;
+  width: 20%;
+  padding: 10px;
+  margin: 15px;
+}
