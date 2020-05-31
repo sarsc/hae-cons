@@ -6,10 +6,10 @@ import LogoLarge from '../components/svg/LogoLarge'
 // <SEO title="Home" />
 
 const IndexPage = () => (
-  <div>
+  <Layout>
     <LogoLarge />
     <h1>BIM Landscape consultants</h1>
-  </div>
+  </Layout>
 )
 
 export default IndexPage
