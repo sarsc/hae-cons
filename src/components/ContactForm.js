@@ -20,7 +20,7 @@ const ContactForm = () => {
         </div>
         <div class="inputContainer">
           <label>Message</label>
-          <textarea name="message" style={{ borderRadius: '4px', padding: '10px'}}></textarea>
+          <textarea name="message" rows="10" cols="20" style={{ borderRadius: '4px', padding: '10px'}}></textarea>
         </div>
         <input type="submit" value="Send" className="submitBtn"/>
       </form>

@@ -33,7 +33,7 @@ const Layout = ({ children }) => {
       <div
       style={{
           textAlign: `center`,
-          margin: `200px auto`,
+          // margin: `200px auto`,
         }}>
         <main>{children}</main>
       </div>
