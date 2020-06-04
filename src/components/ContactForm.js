@@ -7,7 +7,7 @@ class ContactForm extends React.Component {
     super(props);
 
     this.state = {
-      stat: '',
+      statusSubmit: '',
       error:'',
       email: '',
       message: '',
@@ -16,25 +16,40 @@ class ContactForm extends React.Component {
   }
 
   handleSubmit = (event) => {
-    alert('message was submitted');
     event.preventDefault();
+    const form =event.target;
+    const data = new FormData(form);
+    const xhr = new XMLHttpRequest();
+    xhr.open(form.method, form.action);
+    xhr.setRequestHeader("Accept", "application/json");
+    xhr.onreadystatechange = () => {
+      if (xhr.readyState !== XMLHttpRequest.DONE) return;
+      if (xhr.status === 200) {
+        form.reset();
+        this.setState({ statusSubmit: "SUCCESS" });
+      } else {
+        this.setState({ statusSubmit: "ERROR" });
+      }
+    };
+    xhr.send(data);
 
     this.setState({
       email: '',
       message: '',
-      name: '',
-    })
+      name: ''
+    });
   }
 
 
   render () {
 
-    const { stat, name, email, message } = this.state;
+    const { statusSubmit, name, email, message } = this.state;
 
     return (
       <div className="mainFormContainer">
         <form
           onSubmit={this.handleSubmit}
+          action="https://formspree.io/xknqrglb"
           method="POST"
           className="formContainer"
         >
@@ -78,8 +93,9 @@ class ContactForm extends React.Component {
             name="_gotcha"
             style={{display: "none"}}
            />
+          {statusSubmit === "SUCCESS" ? <p>Thanks!</p> : <button className="submitBtn">Submit</button>}
+          {statusSubmit === "ERROR" && <p>Ooops! There was an error.</p>}
 
-          <button className="submitBtn">Submit</button>
         </form>
       </div>
   )
