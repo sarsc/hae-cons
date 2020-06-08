@@ -78,7 +78,6 @@ class ContactForm extends React.Component {
   }
 
   handleFocus = (event) => {
-  const { value, id } = event.target
 
   this.setState(prevState => ({errors: { ...prevState.errors, nameErr: '' }}))
 
@@ -150,7 +149,6 @@ class ContactForm extends React.Component {
           {statusSubmit === "SUCCESS" ? <p>Thanks!</p> : <button className="submitBtn">Submit</button>}
           <span>{this.state.submitErr}</span>
           {statusSubmit === "ERROR" && <p>Ooops! There was an error.</p>}
-
         </form>
       </div>
   )

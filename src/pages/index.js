@@ -17,12 +17,17 @@ const style = {
 
   return (
     <Layout>
-      <div style={{display: 'flex'}}>
+      <div style={{display: 'flex' }}>
         <div style={style}>
           <LogoLarge />
           <h1>BIM Landscape consultants</h1>
         </div>
-          <ContactForm />
+        <div style={{ background: 'rgba(196, 188, 179, 0.5)', display: 'flex', alignItems: 'center', width: '50%'}}>
+          <div style={{width: '100%', color: '#FFF'}}>
+            <h1>COMING SOON</h1>
+            <h2>Our website is currently under cosntruction.</h2>
+          </div>
+        </div>
       </div>
     </Layout>
 )}
