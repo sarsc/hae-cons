@@ -1,0 +1,28 @@
+.mainContainer {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+video {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.videoOverlay {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #c4bcb3;
+  opacity: 0.3;
+  z-index: 1;
+}
+
+.textContainer {
+  z-index: 2;
+  color: #FFF;
+}
