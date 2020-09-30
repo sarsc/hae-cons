@@ -3,6 +3,7 @@ import Layout from "../components/layout"
 // import ContactForm from "../components/ContactForm"
 import video from '../images/forest.mp4'
 import LogoLarge from '../components/svg/LogoLarge'
+import Services from './Services'
 import '../styles/index.scss'
 // import SEO from "../components/seo"
 // <SEO title="Home" />
@@ -32,6 +33,7 @@ const IndexPage = () => {
           </div> */}
         </div>
       </div>
+      <Services />
     </Layout>
 )}
 

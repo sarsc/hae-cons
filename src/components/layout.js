@@ -8,7 +8,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 // import { useStaticQuery, graphql } from "gatsby"
-// import Header from "./header"
+import Header from "./header"
 import "../styles/layout.scss"
 
 const Layout = ({ children }) => {
@@ -21,21 +21,22 @@ const Layout = ({ children }) => {
   //     }
   //   }
   // `)
+  const links =  [
+    {link: 'service', name: 'Service'},
+    {link: 'about', name: 'About'},
+    {link: 'contact', name: 'Contact'},
+  ]
 
-      // <Header siteTitle={data.site.siteMetadata.title} />
-        // style={{
-        //   textAlign: `center`,
-        //   margin: `200px auto`,
-        //   maxWidth: 960,
-        //   padding: `0 1.0875rem 1.45rem`,
-        // }}
   return (
+    <div>
+    <Header menuLinks={links} />
       <div
       style={{
-          textAlign: `center`,
-          // margin: `200px auto`,
-        }}>
+        textAlign: `center`,
+        // margin: `200px auto`,
+      }}>
         <main>{children}</main>
+      </div>
       </div>
   )
 }

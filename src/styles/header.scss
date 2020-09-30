@@ -1,0 +1,17 @@
+.headerContainer, .linksContainer {
+  display: flex;
+}
+
+.headerContainer {
+  margin: 12px 18px;
+  justify-content: flex-end;
+  background-color: transparent;
+}
+
+.link {
+  color: #fff;
+  text-decoration: none;
+  padding-left: 3rem;
+  font-size: 20px;
+  text-transform: uppercase;
+}
