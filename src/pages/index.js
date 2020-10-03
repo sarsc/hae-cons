@@ -27,13 +27,9 @@ const IndexPage = () => {
           <div className="logoContainer">
             <LogoLarge />
           </div>
-          {/* <div>
-              <h2>COMING SOON</h2>
-              <h2>Our website is currently under cosntruction.</h2>
-          </div> */}
         </div>
       </div>
-      <Services />
+      {/* <Services /> */}
     </Layout>
 )}
 

@@ -29,7 +29,7 @@ const Layout = ({ children }) => {
 
   return (
     <div>
-    <Header menuLinks={links} />
+    {/* <Header menuLinks={links} /> */}
       <div
       style={{
         textAlign: `center`,

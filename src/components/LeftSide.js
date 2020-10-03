@@ -5,7 +5,7 @@ const LeftSideContainer = ({...props}) => {
 
   const style = {
     height: '100%',
-    width: 'calc(100% - 40%)',
+    width: 'calc(100% - 65%)',
     fontSize: '30px',
     fontWeight: '500',
     color: '#42B390',
