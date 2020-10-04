@@ -1,11 +1,12 @@
 .servicesContainer {
   display: flex;
   flex-direction: column;
-  padding: 60px 80px;
+  padding: 60px 100px;
   background-color: #EDEBE8;
+  width: 100%;
 }
 
 .service {
   font-size: 25px;
-  // padding: 40px 100px;
+  padding: 40px 100px;
 }

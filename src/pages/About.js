@@ -18,7 +18,7 @@ export default () => {
   return (
     <div style={{
       display: 'flex',
-      height: '100vh',
+      // height: '100vh',
     }}>
       <LeftSideContainer heading="about hae"/>
       <RightSide >
