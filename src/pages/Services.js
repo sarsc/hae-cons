@@ -3,9 +3,6 @@ import LeftSideContainer from '../components/LeftSide'
 import RightSide from '../components/RightSide'
 import PageBody from '../components/RightSide'
 import '../styles/services.scss'
-const PAGE_HEDING = {
-  services: 'what we offer',
-}
 
 const servicesInfo = [
   {
@@ -38,7 +35,7 @@ export default () => {
       display: 'flex',
       height: '100vh',
     }}>
-      <LeftSideContainer heading={PAGE_HEDING.services}/>
+      <LeftSideContainer heading="what we offer"/>
       <RightSide >
           <div className="servicesContainer">{displayServiceText}</div>    
       </RightSide >

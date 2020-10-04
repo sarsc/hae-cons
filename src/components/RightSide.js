@@ -11,6 +11,9 @@ const RightSide = ({ children }) => {
     width: 'calc(100% - 30%)',
     fontSize: '30px',
     border: '5px solid red',  
+    // padding: '40px 100px',
+    paddingRight: '200px',
+    paddingTop: '80px',
   }
 
   return (

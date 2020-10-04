@@ -4,6 +4,7 @@ import Layout from "../components/layout"
 import video from '../images/forest.mp4'
 import LogoLarge from '../components/svg/LogoLarge'
 import Services from './Services'
+import About from './About'
 import '../styles/index.scss'
 // import SEO from "../components/seo"
 // <SEO title="Home" />
@@ -27,6 +28,7 @@ const IndexPage = () => {
             <LogoLarge />
           </div>
       </div>
+      <About />
       <Services />
     </Layout>
 )}
