@@ -23,13 +23,11 @@ const IndexPage = () => {
           </video>
         </div>
         <div className="videoOverlay"></div>    
-        <div className="textContainer">
           <div className="logoContainer">
             <LogoLarge />
           </div>
-        </div>
       </div>
-      {/* <Services /> */}
+      <Services />
     </Layout>
 )}
 

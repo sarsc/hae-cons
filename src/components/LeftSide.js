@@ -10,6 +10,8 @@ const LeftSideContainer = ({...props}) => {
     fontWeight: '500',
     color: '#42B390',
     textTransform: 'uppercase',
+    paddingTop: '100px',
+    paddingLeft: '100px'
   }
   
   return (<div style={style}>

@@ -30,11 +30,7 @@ const Layout = ({ children }) => {
   return (
     <div>
     {/* <Header menuLinks={links} /> */}
-      <div
-      style={{
-        textAlign: `center`,
-        // margin: `200px auto`,
-      }}>
+      <div>
         <main>{children}</main>
       </div>
       </div>

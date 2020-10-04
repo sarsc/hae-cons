@@ -40,9 +40,7 @@ export default () => {
     }}>
       <LeftSideContainer heading={PAGE_HEDING.services}/>
       <RightSide >
-        <div className="colourBlock">
           <div className="servicesContainer">{displayServiceText}</div>    
-        </div>
       </RightSide >
     </div>
   )
