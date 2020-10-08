@@ -33,7 +33,7 @@ export default () => {
   return (
     <div style={{
       display: 'flex',
-      height: '100vh',
+      minHeight: '100vh',
     }}>
       <LeftSideContainer heading="what we offer"/>
       <RightSide >
