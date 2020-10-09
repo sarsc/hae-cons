@@ -1,6 +1,6 @@
 import React from "react"
 import PropTypes from "prop-types"
-import LeftSideContainer from './LeftSide'
+import LeftSideContainer from './LeftSide'                                                
 
 const RightSide = ({ children }) => {
   const style = {
@@ -8,7 +8,7 @@ const RightSide = ({ children }) => {
     width: 'calc(100% - 30%)',
     fontSize: '30px',
     paddingRight: '200px',
-    paddingTop: '80px',
+    paddingTop: '140px',
     marginTop: '100px',
   }
 

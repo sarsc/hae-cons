@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 
 const LeftSideContainer = ({ heading, children }) => {
-  // const { heading } = props;
 
   const style = {
     height: '100%',
@@ -10,7 +9,7 @@ const LeftSideContainer = ({ heading, children }) => {
     fontWeight: '500',
     color: '#42B390',
     textTransform: 'uppercase',
-    paddingTop: '100px',
+    paddingTop: '80px',
     paddingLeft: '200px',
     marginTop: '100px',
   }
