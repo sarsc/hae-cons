@@ -9,6 +9,7 @@ const RightSide = ({ children }) => {
     fontSize: '30px',
     paddingRight: '200px',
     paddingTop: '80px',
+    marginTop: '100px',
   }
 
   return (

@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 
-const LeftSideContainer = ({...props}) => {
-  const { heading } = props;
+const LeftSideContainer = ({ heading, children }) => {
+  // const { heading } = props;
 
   const style = {
     height: '100%',
@@ -11,11 +11,13 @@ const LeftSideContainer = ({...props}) => {
     color: '#42B390',
     textTransform: 'uppercase',
     paddingTop: '100px',
-    paddingLeft: '200px'
+    paddingLeft: '200px',
+    marginTop: '100px',
   }
   
   return (<div style={style}>
-   {heading}
+    {heading}  
+    {children}
   </div>
 )}
 

@@ -6,11 +6,13 @@
 .mainFormContainer {
   display: flex;
   align-items: center;
-  padding: 100px;
-  border: 2px solid #42B390;
+  // padding: 100px;
+  background-color: #FFF;
+  border: 2px solid #C4BCB3;
   border-radius: 6px;
   font-size: 18px;
 }
+
 .formContainer {
   width: 100%;
 }
@@ -21,9 +23,9 @@
 }
 
 .submitBtn {
-  background-color: #42B390;
+  background-color: #C4BCB3;
   border-radius: 4px;
-  border-color: #42B390;
+  border-color: #C4BCB3;
   width: 20%;
   padding: 10px;
   margin: 15px;
