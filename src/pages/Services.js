@@ -29,15 +29,17 @@ const servicesInfo = [
 export default () => {
 
   const displayServiceText = servicesInfo.map(service => <div className="service">{service.text}</div>)
-
+  const displayTitles = servicesInfo.map(service => <h4>{service.name}</h4>)
   return (
     <div style={{
       display: 'flex',
       minHeight: '100vh',
-    }}>
-      <LeftSideContainer heading="what we offer"/>
+    }} className="servicesContainer">
+      <LeftSideContainer heading="what we offer">
+        <div className="servicesTitles">{displayTitles}</div>
+      </LeftSideContainer>
       <RightSide >
-          <div className="servicesContainer">{displayServiceText}</div>    
+          <div className="servicesTextContainer">{displayServiceText}</div>    
       </RightSide >
     </div>
   )

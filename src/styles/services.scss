@@ -1,4 +1,4 @@
-.servicesContainer {
+.servicesTextContainer {
   display: flex;
   flex-direction: column;
   padding: 60px 100px;
@@ -9,4 +9,16 @@
 .service {
   font-size: 20px;
   padding: 40px 100px;
+}
+
+.servicesTitles {
+  margin-top: 140px; 
+  h4 {
+    font-size: 22px;
+    font-weight: 100;
+    padding-bottom: 30px;
+  }
+  h4:hover {
+    color: #42B390;
+  }
 }

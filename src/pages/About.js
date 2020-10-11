@@ -19,8 +19,10 @@ export default () => {
     <div style={{
       display: 'flex',
       // height: '100vh',
-    }}>
-      <LeftSideContainer heading="about hae"/>
+    }} className="aboutContainer">
+      <LeftSideContainer heading="about hae">
+      <h2>BIM Consultancy for Landscape Architecture</h2>
+      </LeftSideContainer>
       <RightSide >
         <div className="aboutTextContainer">
           <div className="aboutText">{displayAboutText}</div>    

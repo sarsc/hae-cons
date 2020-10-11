@@ -21,6 +21,7 @@ const Layout = ({ children }) => {
   //     }
   //   }
   // `)
+  
   const links =  [
     {link: 'service', name: 'Service'},
     {link: 'about', name: 'About'},
