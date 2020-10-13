@@ -1,8 +1,8 @@
 .leftBackground {
   position: absolute;
-  top: 240px;
+  top: 60px;
   left: 0;
-  min-width: 70%;
+  min-width: 75%;
   // height: 700px;
   height: 100%; 
   background-image: url('../images/contact-bg.png'), linear-gradient( rgba(237,235,232,02), rgba(237,235,232,02));
@@ -10,4 +10,8 @@
   background-size: cover;
   z-index: -10;
   opacity: 22%;
+}
+
+.contactRigthSide {
+  padding-top: 100px;
 }

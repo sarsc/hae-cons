@@ -1,10 +1,11 @@
 .aboutContainer {
   h2 {
-    font-size: 24px;
+    font-size: 26px;
     text-transform: none;
     margin-top: 50px; 
-    opacity: 70%;
+    opacity: 50%;
     font-weight: 100;
+    color: #42B390;
   }
 }
 
@@ -17,4 +18,8 @@
 
 .paragraph {
   padding: 10px;
+}
+
+.aboutRightSide {
+  padding-top: 100px;
 }

@@ -1,22 +1,23 @@
 import React from 'react'
 import ContactForm from '../components/ContactForm'
-import LeftSideContainer from '../components/LeftSide'
-import RightSide from '../components/RightSide'
 import '../styles/contact.scss'
 
 export default () => {
 
   return (
-    <div style={{
-      display: 'flex',
+    <div  
+      className="pageContainer" 
+      style={{
       height: '100vh',
       position: 'relative',
     }}>
-      <LeftSideContainer heading="get in touch"/>
+      <div className="leftSideContainer">          
+        <h1 className="heading">get in touch</h1>
+      </div>
       <div className="leftBackground"></div>
-      <RightSide >
+      <div className="rightSideContainer contactRigthSide">
         <ContactForm />
-      </RightSide> 
+      </div>
     </div>
   )
 }

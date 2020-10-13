@@ -1,7 +1,4 @@
 import React from 'react'
-import LeftSideContainer from '../components/LeftSide'
-import RightSide from '../components/RightSide'
-import PageBody from '../components/RightSide'
 import '../styles/services.scss'
 
 const servicesInfo = [
@@ -31,16 +28,14 @@ export default () => {
   const displayServiceText = servicesInfo.map(service => <div className="service">{service.text}</div>)
   const displayTitles = servicesInfo.map(service => <h4>{service.name}</h4>)
   return (
-    <div style={{
-      display: 'flex',
-      minHeight: '100vh',
-    }} className="servicesContainer">
-      <LeftSideContainer heading="what we offer">
+    <div className="servicesContainer pageContainer">
+      <div className="leftSideContainer">          
+        <h1 className="heading">what we offer</h1>
         <div className="servicesTitles">{displayTitles}</div>
-      </LeftSideContainer>
-      <RightSide >
+      </div>
+      <div className="rightSideContainer">
           <div className="servicesTextContainer">{displayServiceText}</div>    
-      </RightSide >
+      </div>
     </div>
   )
 }

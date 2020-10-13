@@ -1,6 +1,4 @@
 import React from 'react'
-import LeftSideContainer from '../components/LeftSide'
-import RightSide from '../components/RightSide'
 import '../styles/about.scss'
 
 const paragraphs = [
@@ -16,18 +14,16 @@ export default () => {
   const displayAboutText = paragraphs.map(service => <p className="paragraph">{service}</p>)
 
   return (
-    <div style={{
-      display: 'flex',
-      // height: '100vh',
-    }} className="aboutContainer">
-      <LeftSideContainer heading="about hae">
-      <h2>BIM Consultancy for Landscape Architecture</h2>
-      </LeftSideContainer>
-      <RightSide >
+    <div className="aboutContainer pageContainer">
+      <div className="leftSideContainer">      
+        <h1 className="heading">about hae</h1>    
+        <h2>BIM Consultancy for Landscape Architecture</h2>
+      </div>
+      <div className="rightSideContainer aboutRightSide">
         <div className="aboutTextContainer">
           <div className="aboutText">{displayAboutText}</div>    
         </div>
-      </RightSide >
+      </div>
     </div>
   )
 }

@@ -1,8 +1,33 @@
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: Poppins, sans-serif;
   font-weight: 300;
 }
 
 h1 {
   font-size: 40px;
+}
+
+.heading {
+  font-size: 30px;
+  font-weight: 500; 
+  color: #42B390;
+  text-transform: uppercase;
+}
+
+.leftSideContainer {
+  height: 100%;
+  width: calc(100% - 65%);
+  padding-left: 200px;
+} 
+
+.rightSideContainer {
+  height: 100%;
+  width: calc(100% - 30%);
+  font-size: 30px;
+  padding-right: 200px;
+}
+
+.pageContainer {
+  display: flex;
+  margin-top: 100px;
 }
