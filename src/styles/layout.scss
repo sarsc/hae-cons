@@ -1,6 +1,5 @@
 body {
-  font-family: Poppins, sans-serif;
-  font-weight: 300;
+  font-family: 'Poppins', sans-serif;
 }
 
 h1 {
@@ -23,8 +22,9 @@ h1 {
 .rightSideContainer {
   height: 100%;
   width: calc(100% - 30%);
-  font-size: 30px;
   padding-right: 200px;
+  font-size: 30px;
+  font-weight: 200;
 }
 
 .pageContainer {
