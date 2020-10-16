@@ -20,7 +20,7 @@ const style = {
       <div style={{display: 'flex' }}>
         <div style={style}>
           <LogoLarge />
-          <h1>BIM Landscape consultants</h1>
+          <h1>BIM Landscape Consultants</h1>
         </div>
         <div style={{ background: 'rgba(196, 188, 179, 0.5)', display: 'flex', alignItems: 'center', width: '50%'}}>
           <div style={{width: '100%', color: '#FFF'}}>
