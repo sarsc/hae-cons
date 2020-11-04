@@ -3,7 +3,7 @@
 }
 
 .navbar {
-  padding: 24px 18px;
+  padding: 24px 24px;
   justify-content: flex-end;
 }
 
@@ -21,11 +21,12 @@
 }
 
 .stickyNav {
-  transition: all .7s ease-in;
+  transition: 0.7s background-color ease-in;
   position: fixed;
   top: 0;
-  right: 0;
+  right: 0; //fix full width margin on the left 
   background-color: #fff;
+  width: 100%;
   opacity: 0.95;
   z-index:11;
   .link {
