@@ -10,6 +10,7 @@ import PropTypes from "prop-types"
 // import { useStaticQuery, graphql } from "gatsby"
 import Header from "./header"
 import "../styles/layout.scss"
+import stickyNav from "../stickyNav"
 
 const Layout = ({ children }) => {
   // const data = useStaticQuery(graphql`
@@ -26,17 +27,18 @@ const Layout = ({ children }) => {
     {link: 'service', name: 'Service'},
     {link: 'about', name: 'About'},
     {link: 'contact', name: 'Contact'},
-  ]
+  ];
+
+  const isSticky = stickyNav();
 
   return (
     <div>
-    <Header menuLinks={links} />
+      <Header menuLinks={links} isSticky={isSticky} />
       <div>
         <main>{children}</main>
       </div>
-      </div>
-  )
-}
+    </div>
+  )}
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,

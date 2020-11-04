@@ -136,7 +136,7 @@ class ContactForm extends React.Component {
               name="message"
               rows="10"
               cols="20"
-              maxlength="700"
+              maxLength="700"
               style={{ borderRadius: '4px', padding: '10px'}} />
           <span>{errors.messageErr}</span>
           </div>

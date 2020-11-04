@@ -1,10 +1,13 @@
-.headerContainer, .linksContainer {
+.navbar, .linksContainer {
   display: flex;
 }
 
-.headerContainer {
-  margin: 12px 18px;
+.navbar {
+  padding: 24px 18px;
   justify-content: flex-end;
+}
+
+.navbarTransparent{
   background-color: transparent;
 }
 
@@ -15,4 +18,17 @@
   font-size: 20px;
   text-transform: uppercase;
   font-weight: 100;
+}
+
+.stickyNav {
+  transition: all .7s ease-in;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: #fff;
+  opacity: 0.95;
+  z-index:11;
+  .link {
+    color: black;
+  }
 }
