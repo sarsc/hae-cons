@@ -31,12 +31,12 @@ const IndexPage = () => {
       <section id="about">
         <About/>
       </section>
-      <section id="services">
+      {/* <section id="services">
         <Services />
       </section>
       <section id="contact">
         <Contact />
-      </section>
+      </section> */}
     </Layout>
 )}
 

@@ -1,33 +1,35 @@
 body {
   font-family: 'Lato', sans-serif;
+  font-size: 20px;
 }
 
-h1 {
-  font-size: 40px;
-}
+// h1 {
+//   font-size: 40px;
+// }
 
 .heading {
-  font-size: 30px;
-  font-weight: 500; 
-  color: #42B390;
+  font-size: 60px;
+  font-weight: 400; 
   text-transform: uppercase;
 }
 
-.leftSideContainer {
-  height: 100%;
-  width: calc(100% - 65%);
-  padding-left: 200px;
-} 
+// .leftSideContainer {
+//   height: 100%;
+//   width: calc(100% - 65%);
+//   padding-left: 200px;
+// } 
 
-.rightSideContainer {
-  height: 100%;
-  width: calc(100% - 30%);
-  padding-right: 200px;
-  font-size: 30px;
-  font-weight: 200;
-}
+// .rightSideContainer {
+//   height: 100%;
+//   width: calc(100% - 30%);
+//   padding-right: 200px;
+//   font-size: 30px;
+//   font-weight: 200;
+// }
 
 .pageContainer {
   display: flex;
-  margin-top: 100px;
+  // margin-top: 100px;
+  padding-right: 100px;
+  height: 100vh;
 }

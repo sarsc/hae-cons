@@ -1,25 +1,40 @@
 .aboutContainer {
+  background-image: url('../images/img-about.jpg'), linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 1));
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  color: white;
+  h1 {
+    margin-bottom: 10px;
+  }
   h2 {
     font-size: 26px;
     text-transform: none;
-    margin-top: 50px; 
-    opacity: 50%;
-    font-weight: 100;
-    color: #42B390;
+    font-weight: 400;
+    font-style: italic;
+    margin-bottom: 70px;
   }
 }
 
 .aboutTextContainer {
-  // padding: 40px 100px;
-  font-size: 18px;
-  height: 100%;
-  padding-left: 100px;
+  width: 700px;
+  text-transform: uppercase;
+  font-weight: 100;
+  background-color: #fff;
+  opacity: 0.9;
+  padding: 30px;
+  p {
+    color: black;
+    padding-bottom: 20px;
+  }
+  span {
+    padding-right: 5px;
+    font-weight: 700;
+  }
 }
 
-.paragraph {
-  padding: 10px;
-}
-
-.aboutRightSide {
-  padding-top: 100px;
-}
+// .aboutRightSide {
+//   padding-top: 100px;
+// }
