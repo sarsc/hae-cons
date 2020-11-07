@@ -24,9 +24,9 @@ const Layout = ({ children }) => {
   // `)
   
   const links =  [
-    {link: 'service', name: 'Service'},
-    {link: 'about', name: 'About'},
-    {link: 'contact', name: 'Contact'},
+    {value: 'services', name: 'Services'},
+    {value: 'about', name: 'About'},
+    {value: 'contact', name: 'Contact'},
   ];
 
   const isSticky = stickyNav();

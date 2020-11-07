@@ -1,7 +1,7 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
-import stickyNav from "../stickyNav";
+import { AnchorLink } from "gatsby-plugin-anchor-links";
 import '../styles/header.scss';
 
 const Header = ({ menuLinks, isSticky }) => {
@@ -12,10 +12,15 @@ const Header = ({ menuLinks, isSticky }) => {
         <div className="linksContainer">
            {menuLinks.map(link => (
              <div key={link.name}>
-              <Link className="link" to={`#${link.link}`}>
+              <AnchorLink 
+                className="link" 
+                to={`/#${link.value}`}
+                title={link.name}
+                stripHash
+              >
                 {link.name}
-              </Link>
-             </div>
+              </AnchorLink>
+             </div> 
            ))}
          </div>
       </nav>
