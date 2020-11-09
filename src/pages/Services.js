@@ -1,40 +1,52 @@
-import React from 'react'
+import React, { useLayoutEffect } from 'react'
 import '../styles/services.scss'
 
 const servicesInfo = [
   {
-    name: 'BIM Strategic Consultancy',
-    text: 'Establishing all documents concerning BIM for Landscape.\
-      Providing support for any contract phases as Pre-Contract (EIR, PQQ’s, BEP),\
-      Contract (BEP,TIDP, MIDP, MDPT, CIC) and  Post-Contract (BEP,TIDP, MIDP, MDPT).'
-  },
-  {
-    name: 'BIM Implementation',
-    text: 'Establishing coordination workflows and standards.\
-      Providing Revit template exclusively for Landscape purpose.',
-  },
-  {
-    name: 'Project Modelling',
-    text: '3D BIM Landscape project development using Revit and BIM Level 2 accredited (TBC)',
+    name: 'Modelling',
+    text: ['BIM Level 2 Compliant Landscape Model development using Revit.'],
   },
   {
     name: 'Information Management',
-    text: 'Reviewing Landscape Revit model for approval before submission. Providing clash detection reports.',
-  }
+    text: ['Landscape Revit Model Revision.',' Quality Control and Clash Detection Reports.'],
+  },
+  {
+    name: 'BIM Strategic Consultancy',
+    text: [
+      'BIM Documents support for all phases',
+      'Pre-Contract (EIR, PQQ’s, BEP) Contract (BEP,TIDP, MIDP, MDPT, CIC) Post-Contract (BEP, TIDP, MIDP, MDPT)'
+    ],
+  },
+  {
+    name: 'BIM Implementation',
+    text:[
+      'Workflow Coordination and BIM Strategic Implementation',
+      'Revit Template for Landscape Architecture.'
+    ],
+  },
 ]
 
 export default () => {
+  const displayServiceText = servicesInfo.map(service =>
+    <div>
+      <h4 className="servicesTitles">{service.name}</h4>
+      <div className="service">
+        {service.text.map((text, i) => <li><span>{i + 1}</span>{text}</li>)}
+      </div>
+    </div>
+  );
 
-  const displayServiceText = servicesInfo.map(service => <div className="service">{service.text}</div>)
-  const displayTitles = servicesInfo.map(service => <h4>{service.name}</h4>)
+
   return (
     <div className="servicesContainer pageContainer">
-      <div className="leftSideContainer">          
-        <h1 className="heading">what we offer</h1>
-        <div className="servicesTitles">{displayTitles}</div>
+      <div className="leftSideContainer leftText"> 
+        <div className="headingContainer">
+          <h1 className="heading">our services</h1>
+          <h2>BIM Consultancy for Landscape Architecture.</h2>
+        </div>         
       </div>
       <div className="rightSideContainer">
-          <div className="servicesTextContainer">{displayServiceText}</div>    
+          {/* <div className="servicesTextContainer">{displayServiceText}</div>     */}
       </div>
     </div>
   )
