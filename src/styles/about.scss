@@ -1,5 +1,5 @@
 .aboutContainer {
-  background-image: url('../images/img-about.jpg'), linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 1));
+  background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0)), url('../images/img-about.jpg');
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -8,33 +8,39 @@
   color: white;
   h1 {
     margin-bottom: 10px;
+    font-weight: 900;
+    text-shadow: 0 0.5px 2px #211f1f;
   }
   h2 {
-    font-size: 26px;
+    font-size: 22px;
     text-transform: none;
-    font-weight: 400;
+    font-weight: 900;
     font-style: italic;
     margin-bottom: 70px;
+    text-shadow: 0 0.5px 2px #211f1f;
   }
 }
 
 .aboutTextContainer {
   width: 700px;
   text-transform: uppercase;
-  font-weight: 100;
   background-color: #fff;
-  opacity: 0.9;
+  opacity: 0.8;
   padding: 30px;
+  
   p {
-    color: black;
-    padding-bottom: 20px;
+    color: #000;
+    font-weight: 100;
+    // padding-bottom: 20px;
   }
   span {
     padding-right: 5px;
     font-weight: 700;
+    font-size: 21px;
   }
 }
 
-// .aboutRightSide {
-//   padding-top: 100px;
-// }
+.separator {
+  border-left: 2px solid #000;
+  padding-left: 20px;
+}
