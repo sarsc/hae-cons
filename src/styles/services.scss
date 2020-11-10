@@ -1,11 +1,15 @@
-// .servicesContainer {
-//   min-height: 100vh;
-// }
 .leftText {
   background-color: #EDEBE8;
   padding-left: 100px;
   display: flex;
   align-items: center;
+}
+
+.rightText {
+  display: flex;
+  align-items: center;
+  padding: 30px;
+  padding-right: 0;
 }
 
 .headingContainer {
@@ -15,26 +19,48 @@
   border-right: none;
 }
 
-.servicesTextContainer {
-  display: flex;
-  flex-direction: column;
-  padding: 60px 100px;
-  width: 100%;
-}
-
-.service {
-  font-size: 20px;
-  padding: 40px 100px;
-}
+// .service {
+//   font-size: 20px;
+//   padding: 40px 100px;
+// }
 
 .servicesTitles {
-  margin-top: 140px; 
-  h4 {
-    font-size: 22px;
-    font-weight: 100;
-    padding-bottom: 30px;
+  font-size: 24px;
+  font-weight: 700;
+  span {
+    display: inline-block;
+    font-weight: 900;
+    background-color: #EDEBE8;
+    font-size: 40px;
+    padding: 6px 8px;
+    margin-right: 8px;
+    margin-bottom: 8px;
   }
-  h4:hover {
-    color: #42B390;
-  }
+//   h4:hover {
+//     color: #42B390;
+//   }
+}
+
+.text1 {
+  grid-area: main1;
+}
+.text2 {
+  grid-area: main2;
+}
+.text3 {
+  grid-area: main3;
+}
+.text4 {
+  grid-area: main4;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: 
+    "main1 ."
+    ". main2"
+    "main3 ."
+    ". main4";
 }

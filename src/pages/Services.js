@@ -27,13 +27,12 @@ const servicesInfo = [
 ]
 
 export default () => {
-  const displayServiceText = servicesInfo.map(service =>
-    <div>
-      <h4 className="servicesTitles">{service.name}</h4>
+  const displayServiceText = servicesInfo.map((service, i) => <div className={`text${i + 1}`}>
+      <h4 className="servicesTitles"><span>0{i + 1}</span>{service.name}</h4>
       <div className="service">
-        {service.text.map((text, i) => <li><span>{i + 1}</span>{text}</li>)}
+        {service.text.map((text) => <li>{text}</li>)}
       </div>
-    </div>
+  </div>
   );
 
 
@@ -45,8 +44,8 @@ export default () => {
           <h2>BIM Consultancy for Landscape Architecture.</h2>
         </div>         
       </div>
-      <div className="rightSideContainer">
-          {/* <div className="servicesTextContainer">{displayServiceText}</div>     */}
+      <div className="rightSideContainer rightText">
+          <div className="grid">{displayServiceText}</div>    
       </div>
     </div>
   )
