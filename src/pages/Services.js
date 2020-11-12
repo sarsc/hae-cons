@@ -28,10 +28,12 @@ const servicesInfo = [
 
 export default () => {
   const displayServiceText = servicesInfo.map((service, i) => <div className={`text${i + 1}`}>
-      <h4 className="servicesTitles"><span>0{i + 1}</span>{service.name}</h4>
-      <div className="service">
-        {service.text.map((text) => <li>{text}</li>)}
-      </div>
+    <div className="gridHeader">
+      <span>0{i + 1}</span><h4 className="servicesTitles">{service.name}</h4>
+    </div>
+    <div className="service">
+      {service.text.map((text) => <p>{text}</p>)}
+    </div>
   </div>
   );
 

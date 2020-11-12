@@ -6,21 +6,36 @@
 .mainFormContainer {
   display: flex;
   align-items: center;
-  // padding: 100px;
-  background-color: #FFF;
   border: 2px solid #C4BCB3;
+  // border: 2px solid #42B390;
   border-radius: 6px;
   font-size: 18px;
-  // margin-top: 100px;
 }
 
 .formContainer {
   width: 100%;
+  padding: 10px 40px;
 }
 
 .inputContainer {
   text-align: left;
-  margin: 15px;
+  margin-bottom: 12px;
+  color: #000;
+  label {
+    margin-bottom: 4px;
+  }
+  input, textarea {
+    border: 0;
+    border-color: none;
+    border-radius: 4px;
+    padding: 10px;
+  }
+  span {
+    margin-top: 8px;
+    font-size: 14px;
+    // color: #42B390;
+    color: red;
+  }
 }
 
 .submitBtn {
@@ -32,4 +47,8 @@
   margin: 15px;
   font-size: 18px;
   color: white;
+}
+
+textarea:focus, input:focus {
+  outline-color: rgba(66, 179, 144, 0.7);
 }

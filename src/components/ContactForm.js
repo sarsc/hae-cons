@@ -99,7 +99,7 @@ class ContactForm extends React.Component {
           className="formContainer"
         >
           <div className="inputContainer">
-            <label htmlFor="name">Name</label>
+            <label htmlFor="name">Full Name</label>
             <input
               onChange={this.handleChange}
               onBlur={this.handleBlur}
@@ -107,7 +107,6 @@ class ContactForm extends React.Component {
               id="name"
               type="text"
               name="name"
-              style={{ borderRadius: '4px', padding: '10px'}}
             />
           <span>{errors.nameErr}</span>
           </div>
@@ -121,13 +120,12 @@ class ContactForm extends React.Component {
               id="email"
               type="email"
               name="_replyto"
-              style={{ borderRadius: '4px', padding: '10px'}}
             />
           <span>{errors.emailErr}</span>
           </div>
 
           <div className="inputContainer">
-            <label htmlFor="message">Message</label>
+            <label htmlFor="message">Text</label>
             <textarea
               onChange={this.handleChange}
               onBlur={this.handleBlur}
@@ -137,7 +135,7 @@ class ContactForm extends React.Component {
               rows="10"
               cols="20"
               maxLength="700"
-              style={{ borderRadius: '4px', padding: '10px'}} />
+              />
           <span>{errors.messageErr}</span>
           </div>
 

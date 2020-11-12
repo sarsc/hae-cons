@@ -1,12 +1,13 @@
+.leftText, .rightText, .gridHeader {
+  display: flex;
+}
 .leftText {
   background-color: #EDEBE8;
   padding-left: 100px;
-  display: flex;
   align-items: center;
 }
 
 .rightText {
-  display: flex;
   align-items: center;
   padding: 30px;
   padding-right: 0;
@@ -24,9 +25,9 @@
 //   padding: 40px 100px;
 // }
 
-.servicesTitles {
-  font-size: 24px;
-  font-weight: 700;
+.gridHeader {
+  align-items: flex-end;
+  margin-bottom: 8px;
   span {
     display: inline-block;
     font-weight: 900;
@@ -34,11 +35,12 @@
     font-size: 40px;
     padding: 6px 8px;
     margin-right: 8px;
-    margin-bottom: 8px;
   }
-//   h4:hover {
-//     color: #42B390;
-//   }
+}
+.servicesTitles {
+  color: #1F1F1F;
+  font-size: 24px;
+  font-weight: 700;
 }
 
 .text1 {
@@ -55,9 +57,11 @@
 }
 
 .grid {
+  border: 1px solid red;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
+  grid-column-gap: 100px;
   grid-template-areas: 
     "main1 ."
     ". main2"
