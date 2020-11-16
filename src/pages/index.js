@@ -1,5 +1,4 @@
 import React from 'react';
-
 import Layout from '../components/layout';
 import Video from '../components/Video';
 import LogoLarge from '../components/svg/LogoLarge';

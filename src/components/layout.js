@@ -7,6 +7,10 @@
 
 import React from 'react';
 import PropTypes from 'prop-types';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
+
+import { Link } from 'gatsby';
 // import { useStaticQuery, graphql } from "gatsby"
 import Header from './header';
 import '../styles/layout.scss';
@@ -37,6 +41,10 @@ const Layout = ({ children }) => {
       <div>
         <main>{children}</main>
       </div>
+      <footer className="footer">
+        <Link to="/">policy</Link>
+        <FontAwesomeIcon icon={faLinkedinIn} className="" />
+      </footer>
     </div>
   );
 };

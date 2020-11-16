@@ -5,6 +5,11 @@
 .navbar {
   padding: 24px 24px;
   justify-content: flex-end;
+  border: 2px solid red;
+  // z-index:15;
+  // position: absolute;
+  top: 0;
+
 }
 
 .navbarTransparent{
