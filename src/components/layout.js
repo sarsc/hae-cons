@@ -5,12 +5,12 @@
  * See: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-import React from "react"
-import PropTypes from "prop-types"
+import React from 'react';
+import PropTypes from 'prop-types';
 // import { useStaticQuery, graphql } from "gatsby"
-import Header from "./header"
-import "../styles/layout.scss"
-import stickyNav from "../stickyNav"
+import Header from './header';
+import '../styles/layout.scss';
+import stickyNav from '../stickyNav';
 
 const Layout = ({ children }) => {
   // const data = useStaticQuery(graphql`
@@ -22,26 +22,27 @@ const Layout = ({ children }) => {
   //     }
   //   }
   // `)
-  
-  const links =  [
-    {value: 'services', name: 'Services'},
-    {value: 'about', name: 'About'},
-    {value: 'contact', name: 'Contact'},
+
+  const links = [
+    { value: 'services', name: 'Services' },
+    { value: 'about', name: 'About' },
+    { value: 'contact', name: 'Contact' },
   ];
 
   const isSticky = stickyNav();
 
   return (
     <div>
-      <Header menuLinks={links} isSticky={false} />
+      <Header menuLinks={links} isSticky={isSticky} />
       <div>
         <main>{children}</main>
       </div>
     </div>
-  )}
+  );
+};
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
-}
+};
 
-export default Layout
+export default Layout;

@@ -1,7 +1,7 @@
 import React from 'react';
 
 import Layout from '../components/layout';
-import video from '../images/forest.mp4';
+import Video from '../components/Video';
 import LogoLarge from '../components/svg/LogoLarge';
 import Services from './Services';
 import About from './About';
@@ -13,15 +13,7 @@ import '../styles/index.scss';
 const IndexPage = () => (
   <Layout>
     <div className="mainContainer">
-      <div className="videoContainer">
-        <video
-          autoPlay
-          loop
-          muted
-        >
-          <source src={video} type="video/mp4" />
-        </video>
-      </div>
+      <Video />
       <div className="videoOverlay" />
       <div className="logoContainer">
         <LogoLarge />
