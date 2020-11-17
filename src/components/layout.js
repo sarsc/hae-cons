@@ -13,8 +13,10 @@ import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 import { Link } from 'gatsby';
 // import { useStaticQuery, graphql } from "gatsby"
 import Header from './header';
-import '../styles/layout.scss';
+import Logo from './svg/Logo';
 import stickyNav from '../stickyNav';
+
+import '../styles/layout.scss';
 
 const Layout = ({ children }) => {
   // const data = useStaticQuery(graphql`
@@ -42,8 +44,11 @@ const Layout = ({ children }) => {
         <main>{children}</main>
       </div>
       <footer className="footer">
-        <Link to="/">policy</Link>
-        <FontAwesomeIcon icon={faLinkedinIn} className="" />
+        <Logo scale={0.4} />
+        <div className="linksFooter">
+          <Link to="/">policy</Link>
+          <FontAwesomeIcon icon={faLinkedinIn} />
+        </div>
       </footer>
     </div>
   );

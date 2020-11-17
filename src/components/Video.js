@@ -1,5 +1,5 @@
 import React, { useRef } from 'react';
-import video from '../images/forest-vd.mp4';
+import video from '../images/forest.mp4';
 import '../styles/video.scss';
 
 const Video = () => {
