@@ -9,6 +9,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
+import { faEnvelopeSquare } from '@fortawesome/free-solid-svg-icons';
 
 import { Link } from 'gatsby';
 // import { useStaticQuery, graphql } from "gatsby"
@@ -47,7 +48,13 @@ const Layout = ({ children }) => {
         <Logo scale={0.4} />
         <div className="linksFooter">
           <Link to="/">policy</Link>
-          <FontAwesomeIcon icon={faLinkedinIn} />
+          <div>
+            <FontAwesomeIcon icon={faEnvelopeSquare} className="envelope" />
+            <span>
+              info.haeconsultans@gmail.com
+            </span>
+            <FontAwesomeIcon icon={faLinkedinIn} />
+          </div>
         </div>
       </footer>
     </div>
