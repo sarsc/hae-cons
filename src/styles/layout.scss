@@ -1,42 +1,33 @@
 $secondary: #C4BCB3; 
 $green: #42B390;
 
-body {
+html, body {
   font-family: 'Lato', sans-serif;
-  font-size: 20px;
-  //overflow-x: hidden; 
+  font-size: 16px;
+  max-width: 100%;
+  overflow-x: hidden;
+  @media (min-width: 768px)  {
+    font-size: 20px;
+  }
 }
 
 h1 {  
   font-weight: 900;
-  font-size: 60px;
   text-transform: uppercase;
+  font-size: 50px;
   margin-bottom: 10px;
+  
+  @media (min-width: 768px)  {
+    font-size: 60px;
+  }
 }
 
 h2 {
   font-weight: 900;
-  font-size: 22px;
-}
-
-.leftSideContainer {
-  height: 100%;
-  width: calc(100% - 65%);
-  // padding-left: 200px;
-} 
-
-.rightSideContainer {
-  width: calc(100% - 30%);
-  // padding-right: 200px;
-  // font-size: 30px;
-  // font-weight: 200;
-}
-
-.pageContainer {
-  display: flex;
-  // margin-top: 100px;
-  padding-right: 100px;
-  height: 100vh;
+  font-size: 18px;
+  @media (min-width: 768px)  {
+    font-size: 22px;
+  }
 }
 
 .footer {
@@ -45,7 +36,6 @@ h2 {
   flex-direction:  column;
   align-items: center;
   padding: 50px 100px;
-
 }
 
 .linksFooter {

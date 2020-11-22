@@ -21,6 +21,7 @@ const IndexPage = () => (
     <section id="about">
       <About />
     </section>
+
     <section id="services">
       <Services />
     </section>

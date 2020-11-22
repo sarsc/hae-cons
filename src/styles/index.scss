@@ -12,9 +12,22 @@
   justify-content: center;
 }
 
-.textContainer {
-  z-index: 15;
-  color: #FFF;
-  text-align: center;
-  font-size: 30px;
+.leftSideContainer {
+  height: 100%;
+  width: calc(100% - 65%);
+} 
+
+.rightSideContainer {
+  width: calc(100% - 30%);
+}
+
+.pageContainer {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  
+  @media (min-width: 1200px)  {
+    padding-right: 100px;
+    box-sizing: border-box;
+  }
 }

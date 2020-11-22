@@ -4,8 +4,10 @@ import '../styles/about.scss';
 
 export default () => (
   <div className="aboutContainer pageContainer">
-    <h1 className="heading">who we are</h1>
-    <h2>HAE is a choice to better address and shape a dynamic world through BIM</h2>
+    <div className="pageTitle">
+      <h1 className="heading">who we are</h1>
+      <h2>HAE is a choice to better address and shape a dynamic world through BIM</h2>
+    </div>
     <div className="aboutTextContainer">
       <div className="separator">
         <p>
