@@ -25,9 +25,9 @@ const IndexPage = () => (
     <section id="services">
       <Services />
     </section>
-    <section id="contact">
+    {/* <section id="contact">
       <Contact />
-    </section>
+    </section> */}
   </Layout>
 );
 

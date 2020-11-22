@@ -1,5 +1,5 @@
-import React, { useLayoutEffect } from 'react'
-import '../styles/services.scss'
+import React from 'react';
+import '../styles/services.scss';
 
 const servicesInfo = [
   {
@@ -8,47 +8,51 @@ const servicesInfo = [
   },
   {
     name: 'Information Management',
-    text: ['Landscape Revit Model Revision.',' Quality Control and Clash Detection Reports.'],
+    text: ['Landscape Revit Model Revision.', ' Quality Control and Clash Detection Reports.'],
   },
   {
     name: 'BIM Strategic Consultancy',
     text: [
       'BIM Documents support for all phases',
-      'Pre-Contract (EIR, PQQ’s, BEP) Contract (BEP,TIDP, MIDP, MDPT, CIC) Post-Contract (BEP, TIDP, MIDP, MDPT)'
+      'Pre-Contract (EIR, PQQ’s, BEP) Contract (BEP,TIDP, MIDP, MDPT, CIC) Post-Contract (BEP, TIDP, MIDP, MDPT)',
     ],
   },
   {
     name: 'BIM Implementation',
-    text:[
+    text: [
       'Workflow Coordination and BIM Strategic Implementation',
-      'Revit Template for Landscape Architecture.'
+      'Revit Template for Landscape Architecture.',
     ],
   },
-]
+];
 
 export default () => {
-  const displayServiceText = servicesInfo.map((service, i) => <div className={`text${i + 1}`}>
-    <div className="gridHeader">
-      <span>0{i + 1}</span><h4 className="servicesTitles">{service.name}</h4>
+  const displayServiceText = servicesInfo.map((service, i) => (
+    <div className={`text${i + 1}`}>
+      <div className="gridHeader">
+        <span>
+          0
+          {i + 1}
+        </span>
+        <h4 className="servicesTitles">{service.name}</h4>
+      </div>
+      <div className="service">
+        {service.text.map((text) => <p>{text}</p>)}
+      </div>
     </div>
-    <div className="service">
-      {service.text.map((text) => <p>{text}</p>)}
-    </div>
-  </div>
-  );
-
+  ));
 
   return (
     <div className="servicesContainer pageContainer">
-      <div className="leftSideContainer leftText"> 
+      <div className="leftSideContainer leftText">
         <div className="headingContainer">
           <h1 className="heading">our services</h1>
           <h2>BIM Consultancy for Landscape Architecture.</h2>
-        </div>         
+        </div>
       </div>
       <div className="rightSideContainer rightText">
-          <div className="grid">{displayServiceText}</div>    
+        <div className="grid">{displayServiceText}</div>
       </div>
     </div>
-  )
-}
+  );
+};

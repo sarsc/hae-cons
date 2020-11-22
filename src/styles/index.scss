@@ -12,18 +12,22 @@
   justify-content: center;
 }
 
-.leftSideContainer {
-  height: 100%;
-  width: calc(100% - 65%);
-} 
+// @media (min-width: 1200px)  {
 
-.rightSideContainer {
-  width: calc(100% - 30%);
-}
+// .leftSideContainer {
+//   height: 100%;
+//   width: calc(100% - 65%);
+// } 
+
+// .rightSideContainer {
+//   width: calc(100% - 30%);
+// }
+// }
+
 
 .pageContainer {
   display: flex;
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
   
   @media (min-width: 1200px)  {

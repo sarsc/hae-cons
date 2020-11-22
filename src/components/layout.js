@@ -40,7 +40,7 @@ const Layout = ({ children }) => {
 
   return (
     <div>
-      <Header menuLinks={links} isSticky={isSticky} />
+      <Header menuLinks={links} isSticky={false} />
       <div>
         <main>{children}</main>
       </div>
