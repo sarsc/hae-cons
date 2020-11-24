@@ -44,7 +44,7 @@ export default () => {
   ));
 
   return (
-    <div className="servicesContainer pageContainer">
+    <div className="pageContainer servicesContainer" style={{ paddingTop: '0' }}>
       <div className="leftSideContainer leftText">
         <div className="headingContainer">
           <h1 className="heading">our services</h1>
