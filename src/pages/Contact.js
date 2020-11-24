@@ -7,7 +7,7 @@ export default () => (
     <div className="">
       <h1 className="heading">be in touch</h1>
     </div>
-    <div className="contactRigthSide">
+    <div className="contactFormContainer">
       <ContactForm />
     </div>
   </div>

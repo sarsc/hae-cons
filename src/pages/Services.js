@@ -1,4 +1,5 @@
 import React from 'react';
+
 import '../styles/services.scss';
 
 const servicesInfo = [
@@ -8,7 +9,7 @@ const servicesInfo = [
   },
   {
     name: 'Information Management',
-    text: ['Landscape Revit Model Revision.', ' Quality Control and Clash Detection Reports.'],
+    text: ['Landscape Revit Model Revision.', 'Quality Control and Clash Detection Reports.'],
   },
   {
     name: 'BIM Strategic Consultancy',
@@ -36,9 +37,9 @@ export default () => {
         </span>
         <h4 className="servicesTitles">{service.name}</h4>
       </div>
-      <div className="service">
-        {service.text.map((text) => <p>{text}</p>)}
-      </div>
+      <ul className="service">
+        {service.text.map((text) => (<li>{text}</li>))}
+      </ul>
     </div>
   ));
 
