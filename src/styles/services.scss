@@ -27,11 +27,15 @@ $green: #42B390;
   align-items: center;
   padding: 20px;
   margin: 30px 16px;
-  // padding-right: 0;
 
-  @media (min-width: 768px) and (max-width: 1200px) {
+  @media (min-width: 768px) {
     margin: 0 100px;
-    padding: 30px 0;
+    padding: 50px 0;
+  }
+
+  @media (min-width: 1200px) {
+    margin: 0;
+    margin-left: 50px;
   }
 }
 
@@ -70,13 +74,21 @@ $green: #42B390;
     font-size: 20px;
     padding: 6px 8px;
     margin-right: 8px;
+    border-radius: 4px; 
   }
 
   @media (min-width: 768px) {
+    margin-bottom: 16px;
+
+    h4 {
+      font-size: 22px;
+    }
+
     span {
       font-size: 38px;
     }
   }
+
   @media (min-width: 1024px) {
     span {
       font-size: 40px;
@@ -92,6 +104,13 @@ $green: #42B390;
 
 ul {
   list-style: none;
+  
+  li {
+    margin-bottom: 8px;
+    @media (min-width: 768px)  {
+      margin-bottom:14px;
+    }
+  }
 }
 
 li::before {
@@ -123,21 +142,13 @@ li::before {
 
   @media (min-width: 768px) {
     grid-template-columns: 1fr 1fr;
-    // column-gap: 100px;
-
-  }
-
-  @media (min-width: 1024px)  {
-    // grid-template-columns: 1fr 1fr;
     row-gap: 50px;
     column-gap: 50px;
   }
 
   @media (min-width: 1200px)  {
-    border: 1px solid red;
-    // grid-template-columns: 1fr 1fr;
-    column-gap: 100px;
-    row-gap: 0;
+    column-gap: 0;
+    row-gap: 10px;
     grid-template-areas: 
       "main1 ."
       ". main2"

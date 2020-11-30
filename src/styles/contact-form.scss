@@ -7,14 +7,18 @@
   display: flex;
   align-items: center;
   border: 2px solid #C4BCB3;
-  // border: 2px solid #42B390;
   border-radius: 6px;
   font-size: 18px;
+  padding: 10px;
 }
 
 .formContainer {
   width: 100%;
-  padding: 10px 40px;
+  padding: 10px 10px;
+  // box-sizing: border-box;
+  @media (min-width: 768px) {
+    padding: 10px 40px;
+  }
 }
 
 .inputContainer {
@@ -34,7 +38,7 @@
     margin-top: 8px;
     font-size: 14px;
     color: #42B390;
-    // color: red;
+    opacity: 0.9;
   }
 }
 

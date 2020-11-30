@@ -48,11 +48,13 @@ const Layout = ({ children }) => {
         <Logo scale={0.4} />
         <div className="linksFooter">
           <Link to="/">policy</Link>
-          <div>
-            <FontAwesomeIcon icon={faEnvelopeSquare} className="envelope" />
-            <span>
-              info.haeconsultans@gmail.com
-            </span>
+          <div className="iconsContainer">
+            <div>
+              <FontAwesomeIcon icon={faEnvelopeSquare} className="envelope" />
+              <span>
+                info.haeconsultans@gmail.com
+              </span>
+            </div>
             <FontAwesomeIcon icon={faLinkedinIn} />
           </div>
         </div>

@@ -7,7 +7,7 @@ html, body {
   max-width: 100%;
   overflow-x: hidden;
   letter-spacing: 0.01rem;
-
+  
   @media (min-width: 768px)  {
     font-size: 20px;
   }
@@ -38,9 +38,12 @@ h2 {
 .footer {
   display: flex;
   background-color: $secondary;
-  flex-direction:  column;
   align-items: center;
-  padding: 50px 100px;
+  padding: 50px 20px;
+  flex-direction:  column;
+  @media (min-width: 768px) {
+    padding: 50px 100px;
+  }
 }
 
 .linksFooter {
@@ -49,12 +52,15 @@ h2 {
   display: flex;
   border-top: 2px solid #FFF;
   width: 100%;
-  justify-content: space-between;
   box-sizing: border-box;
   color: $green;
   font-size: 14px;
-
+  flex-direction:  column;
+  align-items: center;
+  
   @media (min-width: 768px) {
+    flex-direction:  row;
+    justify-content: space-between;
     font-size: 16px;
   }
 
