@@ -15,7 +15,7 @@ import { Link } from 'gatsby';
 // import { useStaticQuery, graphql } from "gatsby"
 import Header from './header';
 import Logo from './svg/Logo';
-import stickyNav from '../stickyNav';
+// import stickyNav from '../stickyNav';
 
 import '../styles/layout.scss';
 
@@ -36,7 +36,7 @@ const Layout = ({ children }) => {
     { value: 'contact', name: 'Contact' },
   ];
 
-  const isSticky = stickyNav();
+  // const isSticky = stickyNav();
 
   return (
     <div>

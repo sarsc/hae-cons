@@ -25,11 +25,13 @@ const Header = ({ menuLinks, isSticky }) => (
 );
 
 Header.propTypes = {
-  siteTitle: PropTypes.string,
+  menuLinks: PropTypes.array,
+  isSticky: PropTypes.bool,
 };
 
 Header.defaultProps = {
-  siteTitle: '',
+  isSticky: false,
+  menuLinks: [],
 };
 
 export default Header;
