@@ -15,32 +15,26 @@ import { Link } from 'gatsby';
 // import { useStaticQuery, graphql } from "gatsby"
 import Header from './header';
 import Logo from './svg/Logo';
-// import stickyNav from '../stickyNav';
+import stickyNav from '../stickyNav';
 
 import '../styles/layout.scss';
 
-const Layout = ({ children }) => {
-  // const data = useStaticQuery(graphql`
-  //   query SiteTitleQuery {
-  //     site {
-  //       siteMetadata {
-  //         title
-  //       }
-  //     }
-  //   }
-  // `)
-
+const Layout = ({ children, isMobile }) => {
   const links = [
     { value: 'services', name: 'Services' },
     { value: 'about', name: 'About' },
     { value: 'contact', name: 'Contact' },
   ];
 
-  // const isSticky = stickyNav();
+  const isSticky = stickyNav();
 
   return (
     <div>
-      <Header menuLinks={links} isSticky={false} />
+      <Header
+        menuLinks={links}
+        isSticky={isSticky}
+        isMobile={isMobile}
+      />
       <div>
         <main>{children}</main>
       </div>
@@ -65,6 +59,11 @@ const Layout = ({ children }) => {
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
+  isMobile: PropTypes.bool,
+};
+
+Layout.defaultProps = {
+  isMobile: false,
 };
 
 export default Layout;

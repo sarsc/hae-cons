@@ -19,7 +19,7 @@ const IndexPage = () => {
   });
 
   return (
-    <Layout>
+    <Layout isMobile={isMobile}>
       <div className="mainContainer">
         <Video />
         <div className="videoOverlay" />
