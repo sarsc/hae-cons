@@ -24,8 +24,8 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
-        name: '',
-        short_name: 'starter',
+        name: 'Hae Consultants',
+        short_name: 'Hae Consultants',
         start_url: '/',
         background_color: '#663399',
         theme_color: '#663399',
