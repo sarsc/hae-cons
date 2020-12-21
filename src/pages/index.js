@@ -1,43 +1,26 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import Layout from '../components/layout';
-import Video from '../components/Video';
-import Logo from '../components/svg/Logo';
-import Services from './Services';
-import About from './About';
-import Contact from './Contact';
-import '../styles/index.scss';
-// import SEO from "../components/seo"
-// <SEO title="Home" />
+import LogoLarge from '../components/svg/Logo';
 
-const IndexPage = () => {
-  const [isMobile, setMobile] = useState(false);
-
-  useEffect(() => {
-    if (window.innerWidth <= 480) {
-      setMobile(true);
-    }
-  });
+export default () => {
+  const mainContainer = {
+    background: 'rgba(196, 188, 179, 0.5)',
+    height: '100vh',
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'center',
+    alignItems: 'center',
+    color: 'white',
+  };
 
   return (
-    <Layout isMobile={isMobile}>
-      <div className="mainContainer">
-        <Video />
-        <div className="videoOverlay" />
-        <div className="logoContainer">
-          <Logo scale={isMobile ? 0.7 : 1} />
-        </div>
+    <div style={mainContainer}>
+      <LogoLarge />
+      <h1 style={{ margin: '50px 0', fontSize: '50px' }}>BIM Landscape Consultants</h1>
+      <div style={{}}>
+        <h1>COMING SOON</h1>
+        <h2>Our website is currently under cosntruction</h2>
       </div>
-      <section id="about">
-        <About />
-      </section>
-      <section id="services">
-        <Services />
-      </section>
-      <section id="contact">
-        <Contact />
-      </section>
-    </Layout>
+    </div>
   );
 };
-
-export default IndexPage;

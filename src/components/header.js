@@ -12,7 +12,7 @@ const Header = ({ menuLinks, isSticky, isMobile }) => {
         <div key={link.name}>
           <AnchorLink
             className="link"
-            to={`/#${link.value}`}
+            to={`/homepage#${link.value}`}
             title={link.name}
             stripHash
             id={`${link.value}`}
@@ -38,7 +38,7 @@ const Header = ({ menuLinks, isSticky, isMobile }) => {
               <div key={link.name}>
                 <AnchorLink
                   className="link menu-item"
-                  to={`/#${link.value}`}
+                  to={`/homepage#${link.value}`}
                   title={link.name}
                   stripHash
                 >
