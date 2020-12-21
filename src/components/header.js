@@ -1,42 +1,65 @@
-import { Link } from "gatsby"
-import PropTypes from "prop-types"
-import React from "react"
+import PropTypes from 'prop-types';
+import React from 'react';
+import { AnchorLink } from 'gatsby-plugin-anchor-links';
+import { slide as Menu } from 'react-burger-menu';
 
-const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `#8EC3DF`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 50px`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
+import '../styles/header.scss';
+
+const Header = ({ menuLinks, isSticky, isMobile }) => {
+  const displayLinks = (
+    <div className="linksContainer">
+      {menuLinks.map((link) => (
+        <div key={link.name}>
+          <AnchorLink
+            className="link"
+            to={`/homepage#${link.value}`}
+            title={link.name}
+            stripHash
+            id={`${link.value}`}
+          >
+            {link.name}
+          </AnchorLink>
+        </div>
+      ))}
     </div>
-  </header>
-)
+  );
+
+  return (
+    <header className="headerContainer">
+      {!isMobile
+        ? (
+          <nav className={isSticky ? 'stickyNav navbar' : 'navbar navbarTransparent'}>
+            {displayLinks}
+          </nav>
+        )
+        : (
+          <Menu right>
+            {menuLinks.map((link) => (
+              <div key={link.name}>
+                <AnchorLink
+                  className="link menu-item"
+                  to={`/homepage#${link.value}`}
+                  title={link.name}
+                  stripHash
+                >
+                  {link.name}
+                </AnchorLink>
+              </div>
+            ))}
+          </Menu>
+        )}
+    </header>
+  );
+};
 
 Header.propTypes = {
-  siteTitle: PropTypes.string,
-}
+  menuLinks: PropTypes.array,
+  isSticky: PropTypes.bool,
+};
 
 Header.defaultProps = {
-  siteTitle: ``,
-}
+  isSticky: false,
+  menuLinks: [],
+};
 
-export default Header
+export default Header;

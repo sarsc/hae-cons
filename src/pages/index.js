@@ -1,35 +1,25 @@
-import React from "react"
-import Layout from "../components/layout"
-import ContactForm from "../components/ContactForm"
-import LogoLarge from '../components/svg/LogoLarge'
+import React from 'react';
+import LogoLarge from '../components/svg/Logo';
 
-// import SEO from "../components/seo"
-// <SEO title="Home" />
-
-const IndexPage = () => {
-
-const style = {
-  width: '50%',
-  padding: '40px',
-  textAlign: 'center',
-  margin: '200px 0'
-}
+export default () => {
+  const mainContainer = {
+    background: 'rgba(196, 188, 179, 0.5)',
+    height: '100vh',
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'center',
+    alignItems: 'center',
+    color: 'white',
+  };
 
   return (
-    <Layout>
-      <div style={{display: 'flex' }}>
-        <div style={style}>
-          <LogoLarge />
-          <h1>BIM Landscape Consultants</h1>
-        </div>
-        <div style={{ background: 'rgba(196, 188, 179, 0.5)', display: 'flex', alignItems: 'center', width: '50%'}}>
-          <div style={{width: '100%', color: '#FFF'}}>
-            <h1>COMING SOON</h1>
-            <h2>Our website is currently under cosntruction.</h2>
-          </div>
-        </div>
+    <div style={mainContainer}>
+      <LogoLarge />
+      <h1 style={{ margin: '50px 0', fontSize: '50px' }}>BIM Landscape Consultants</h1>
+      <div style={{}}>
+        <h1>COMING SOON</h1>
+        <h2>Our website is currently under cosntruction</h2>
       </div>
-    </Layout>
-)}
-
-export default IndexPage
+    </div>
+  );
+};

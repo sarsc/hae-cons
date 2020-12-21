@@ -1,0 +1,158 @@
+$green: #42B390;
+
+
+.leftText, .rightText, .gridHeader, .servicesContainer {
+  display: flex;
+}
+
+.servicesContainer {
+  flex-direction: column;
+
+  @media (min-width: 1200px)  {
+    flex-direction: row;
+  }
+}
+
+.leftText {
+  background-color: #EDEBE8;
+  justify-content: center;
+  @media (min-width: 1200px)  {
+    padding-left: 100px;
+    padding-left: 100px;
+    align-items: center;
+  }
+}
+
+.rightText {
+  align-items: center;
+  padding: 20px;
+  margin: 30px 16px;
+
+  @media (min-width: 768px) {
+    margin: 0 100px;
+    padding: 50px 0;
+  }
+
+  @media (min-width: 1200px) {
+    margin: 0;
+    margin-left: 50px;
+  }
+}
+
+.headingContainer {
+  border-right: none;
+  padding: 50px;
+  text-align: center;
+  padding-bottom: 30px;
+  
+  @media (max-width: 1200px)  {
+    h2 {
+      padding-bottom: 10px;
+      border-bottom: 4px solid #fff;
+    }
+  }
+  
+  @media (min-width: 1200px)  {
+    border: 2px solid #fff;
+    padding-bottom: 70px;
+    text-align: left;
+  }
+}
+
+.gridHeader {
+  align-items: flex-end;
+  margin-bottom: 8px;
+  
+  h4 {
+    font-size: 18px;
+  }
+  
+  span {
+    display: inline-block;
+    font-weight: 900;
+    background-color: #EDEBE8;
+    font-size: 20px;
+    padding: 6px 8px;
+    margin-right: 8px;
+    border-radius: 4px; 
+  }
+
+  @media (min-width: 768px) {
+    margin-bottom: 16px;
+
+    h4 {
+      font-size: 22px;
+    }
+
+    span {
+      font-size: 38px;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    span {
+      font-size: 40px;
+    }
+  }
+}
+
+.servicesTitles {
+  color: #1F1F1F;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+ul {
+  list-style: none;
+  
+  li {
+    margin-bottom: 8px;
+    @media (min-width: 768px)  {
+      margin-bottom:14px;
+    }
+  }
+}
+
+li::before {
+  content: "\2022";
+  color: $green;
+  padding-right: 2px;
+}
+
+@media (min-width: 1200px)  {
+  .text1 {
+    grid-area: main1;
+  }
+  .text2 {
+    grid-area: main2;
+  }
+  .text3 {
+    grid-area: main3;
+  }
+  .text4 {
+    grid-area: main4;
+  }
+}
+
+.grid {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr;
+  row-gap: 30px;
+
+  @media (min-width: 768px) {
+    grid-template-columns: 1fr 1fr;
+    row-gap: 50px;
+    column-gap: 50px;
+  }
+
+  @media (min-width: 1200px)  {
+    column-gap: 0;
+    row-gap: 10px;
+    grid-template-areas: 
+      "main1 ."
+      ". main2"
+      "main3 ."
+      ". main4";
+  }
+}

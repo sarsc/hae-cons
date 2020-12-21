@@ -5,43 +5,65 @@
  * See: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-import React from "react"
-import PropTypes from "prop-types"
+import React from 'react';
+import PropTypes from 'prop-types';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
+import { faEnvelopeSquare } from '@fortawesome/free-solid-svg-icons';
+
+import { Link } from 'gatsby';
 // import { useStaticQuery, graphql } from "gatsby"
-// import Header from "./header"
-import "../styles/layout.scss"
+import Header from './header';
+import Logo from './svg/Logo';
+import stickyNav from '../stickyNav';
 
-const Layout = ({ children }) => {
-  // const data = useStaticQuery(graphql`
-  //   query SiteTitleQuery {
-  //     site {
-  //       siteMetadata {
-  //         title
-  //       }
-  //     }
-  //   }
-  // `)
+import '../styles/layout.scss';
 
-      // <Header siteTitle={data.site.siteMetadata.title} />
-        // style={{
-        //   textAlign: `center`,
-        //   margin: `200px auto`,
-        //   maxWidth: 960,
-        //   padding: `0 1.0875rem 1.45rem`,
-        // }}
+const Layout = ({ children, isMobile }) => {
+  const links = [
+    { value: 'services', name: 'Services' },
+    { value: 'about', name: 'About' },
+    { value: 'contact', name: 'Contact' },
+  ];
+
+  const isSticky = stickyNav();
+
   return (
-      <div
-      style={{
-          textAlign: `center`,
-          // margin: `200px auto`,
-        }}>
+    <div>
+      <Header
+        menuLinks={links}
+        isSticky={isSticky}
+        isMobile={isMobile}
+      />
+      <div>
         <main>{children}</main>
       </div>
-  )
-}
+      <footer className="footer">
+        <Logo scale={0.4} />
+        <div className="linksFooter">
+          <Link to="/">policy</Link>
+          <div className="iconsContainer">
+            <div>
+              <FontAwesomeIcon icon={faEnvelopeSquare} className="envelope" />
+              <span>
+                info.haeconsultans@gmail.com
+              </span>
+            </div>
+            <FontAwesomeIcon icon={faLinkedinIn} />
+          </div>
+        </div>
+      </footer>
+    </div>
+  );
+};
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
-}
+  isMobile: PropTypes.bool,
+};
 
-export default Layout
+Layout.defaultProps = {
+  isMobile: false,
+};
+
+export default Layout;

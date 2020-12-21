@@ -1,9 +1,77 @@
-@import url('https://fonts.googleapis.com/css2?family=Mandali&family=Open+Sans:wght@600&display=swap');
+$secondary: #C4BCB3; 
+$green: #42B390;
 
-body {
-  font-family: 'Mandali', sans-serif;
+html, body {
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  max-width: 100%;
+  overflow-x: hidden;
+  letter-spacing: 0.01rem;
+  
+  @media (min-width: 768px)  {
+    font-size: 20px;
+  }
 }
 
-h1 {
-  font-size: 40px;
+h1 {  
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 30px;
+  margin-bottom: 30px;
+  @media (min-width: 480px)  {
+    margin-bottom: 10px;
+    font-size: 40px;
+  }
+  @media (min-width: 1020px)  {
+    font-size: 60px;
+  }
+}
+
+h2 {
+  font-weight: 900;
+  font-size: 18px;
+  @media (min-width: 768px)  {
+    font-size: 22px;
+  }
+}
+
+.footer {
+  display: flex;
+  background-color: $secondary;
+  align-items: center;
+  padding: 50px 20px;
+  flex-direction:  column;
+  @media (min-width: 768px) {
+    padding: 50px 100px;
+  }
+}
+
+.linksFooter {
+  margin-top: 50px;
+  padding: 20px 0;
+  display: flex;
+  border-top: 2px solid #FFF;
+  width: 100%;
+  box-sizing: border-box;
+  color: $green;
+  font-size: 14px;
+  flex-direction:  column;
+  align-items: center;
+  
+  @media (min-width: 768px) {
+    flex-direction:  row;
+    justify-content: space-between;
+    font-size: 16px;
+  }
+
+  span {
+    padding-right: 15px;
+  }
+  a {
+    text-decoration: none;
+    color: $green;
+  }
+  .envelope {
+    padding-right: 5px;
+  }
 }
