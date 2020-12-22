@@ -10,6 +10,7 @@ export default () => {
     justifyContent: 'center',
     alignItems: 'center',
     color: 'white',
+    fontFamily: 'Lato, sans-serif',
   };
 
   return (
@@ -18,7 +19,7 @@ export default () => {
       <h1 style={{ margin: '50px 0', fontSize: '50px' }}>BIM Landscape Consultants</h1>
       <div style={{}}>
         <h1>COMING SOON</h1>
-        <h2>Our website is currently under cosntruction</h2>
+        <h2>Our website is currently under construction</h2>
       </div>
     </div>
   );
