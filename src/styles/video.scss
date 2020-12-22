@@ -7,11 +7,27 @@
 	left: 0;
 }
 
-.videoContainer video {
-  height: 100%;
-  width: 100%;
-	object-fit: cover;
+.videoContainer {
+  background-image: url('../assets/forest-img.png');
+  background-size: cover; /* or contain depending on what you want */
+  background-position: center center;
+  background-repeat: no-repeat;
+  
+  video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  @media only screen 
+  and (max-width: 480px) {
+    video {
+      display: none;
+    }
+  }
 }
+
+
 
 .videoContainer::after {
   content: '';
