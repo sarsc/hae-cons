@@ -10,10 +10,8 @@ import PropTypes from 'prop-types';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelopeSquare } from '@fortawesome/free-solid-svg-icons';
-import CookieConsent, { getCookieConsentValue } from 'react-cookie-consent';
-
+// import CookieConsent, { getCookieConsentValue } from 'react-cookie-consent';
 import { Link } from 'gatsby';
-// import { useStaticQuery, graphql } from "gatsby"
 import Header from './header';
 import Logo from './svg/Logo';
 import stickyNav from '../stickyNav';
@@ -26,9 +24,8 @@ const Layout = ({ children, isMobile }) => {
     { value: 'about', name: 'About' },
     { value: 'contact', name: 'Contact' },
   ];
-
   const isSticky = stickyNav();
-  console.warn(getCookieConsentValue(), 'COOKIIIES');
+  // console.warn(getCookieConsentValue(), '');
   return (
     <div>
       <Header
@@ -36,7 +33,7 @@ const Layout = ({ children, isMobile }) => {
         isSticky={isSticky}
         isMobile={isMobile}
       />
-      <CookieConsent
+      {/* <CookieConsent
         location="bottom"
         buttonText="Accept"
         enableDeclineButton
@@ -49,23 +46,20 @@ const Layout = ({ children, isMobile }) => {
         contentStyle={{ margin: '0 50px' }}
       >
         This website uses cookies to enhance the user experience.
-      </CookieConsent>
+      </CookieConsent> */}
       <div>
         <main>{children}</main>
       </div>
       <footer className="footer">
         <Logo scale={0.4} />
         <div className="linksFooter">
-          <Link to="/">policy</Link>
-          <div className="iconsContainer">
-            <div>
-              <FontAwesomeIcon icon={faEnvelopeSquare} className="envelope" />
-              <span>
-                info.haeconsultans@gmail.com
-              </span>
-            </div>
-            <FontAwesomeIcon icon={faLinkedinIn} />
+          <div>
+            <span>
+              <Link to="/">Privacy Policy</Link>
+            </span>
+            <Link to="/">Terms and Conditions</Link>
           </div>
+          <FontAwesomeIcon icon={faLinkedinIn} className="social" />
         </div>
       </footer>
     </div>

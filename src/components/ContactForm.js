@@ -8,7 +8,6 @@ class ContactForm extends React.Component {
 
     this.state = {
       statusSubmit: '',
-      submitErr:'',
       errors: {
         nameErr: '',
         messageErr: '',
@@ -144,9 +143,13 @@ class ContactForm extends React.Component {
             name="_gotcha"
             style={{display: "none"}}
            />
-          {statusSubmit === "SUCCESS" ? <p>Thanks!</p> : <button className="submitBtn">Submit</button>}
-          <span>{this.state.submitErr}</span>
-          {statusSubmit === "ERROR" && <p>Ooops! There was an error.</p>}
+            <button className="submitBtn">Submit</button>
+          {statusSubmit === "SUCCESS" && 
+            <p className="messageSubmit">Thank you! Your request has been submitted!</p> 
+          }
+          {statusSubmit === "ERROR" && 
+            <p className="messageSubmit">Ooops! There was an error.</p>
+          }
         </form>
       </div>
   )

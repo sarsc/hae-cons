@@ -1,3 +1,6 @@
+$green: #42B390;
+$secondary: #EDEBE8;
+
 .formContainer, .inputContainer{
   display: flex;
   flex-direction: column;
@@ -6,9 +9,9 @@
 .mainFormContainer {
   display: flex;
   align-items: center;
-  border: 2px solid #C4BCB3;
+  border: 2px solid #fff;
   border-radius: 6px;
-  font-size: 18px;
+  font-size: 16px;
   padding: 10px;
 }
 
@@ -25,6 +28,7 @@
   text-align: left;
   margin-bottom: 12px;
   color: #000;
+  opacity: 0.8;
   label {
     margin-bottom: 4px;
   }
@@ -37,20 +41,23 @@
   span {
     margin-top: 8px;
     font-size: 14px;
-    color: #42B390;
+    color: $green;
     opacity: 0.9;
+  }
+  textarea {
+    font-family: Lato, sans-serif;
   }
 }
 
 .submitBtn {
-  background-color: #C4BCB3;
+  background-color: $green;
   border-radius: 4px;
   border: none;
   width: 100%;
   padding: 10px;
   // margin: 15px;
   font-size: 18px;
-  color: white;
+  color: #fff;
   @media (min-width: 1200px) {
     width: 20%;
   }
@@ -58,4 +65,10 @@
 
 textarea:focus, input:focus {
   outline-color: rgba(66, 179, 144, 0.7);
+}
+
+.messageSubmit {
+  margin-top: 8px;
+  text-align: center;
+  color: $green;
 }

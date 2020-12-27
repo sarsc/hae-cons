@@ -1,4 +1,4 @@
-$secondary: #C4BCB3; 
+$secondary: #EDEBE8; 
 $green: #42B390;
 
 html, body {
@@ -35,31 +35,34 @@ h2 {
   }
 }
 
-.footer {
+
+.cookiesContainer, .footer, .linksFooter {
   display: flex;
-  background-color: $secondary;
+}
+
+.footer {
   align-items: center;
-  padding: 50px 20px;
   flex-direction:  column;
+  background-color: $secondary;
+  padding: 30px 20px;
   @media (min-width: 768px) {
-    padding: 50px 100px;
+    padding: 30px 100px;
   }
 }
 
 .linksFooter {
-  margin-top: 50px;
-  padding: 20px 0;
-  display: flex;
+  flex-direction:  column;
+  align-items: center;
+  margin-top: 30px;
+  padding-top: 20px;
   border-top: 2px solid #FFF;
   width: 100%;
   box-sizing: border-box;
   color: $green;
   font-size: 14px;
-  flex-direction:  column;
-  align-items: center;
   
   @media (min-width: 768px) {
-    flex-direction:  row;
+    flex-direction: row;
     justify-content: space-between;
     font-size: 16px;
   }
@@ -71,13 +74,14 @@ h2 {
     text-decoration: none;
     color: $green;
   }
-  .envelope {
-    padding-right: 5px;
+  .social {
+    @media (max-width: 768px) {
+      padding-top: 8px;
+    }
   }
 }
 
 .cookiesContainer {
-  display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
@@ -105,7 +109,6 @@ h2 {
   padding: 10px 15px;
   color: #fff;
 }
-
 
 .cookieDecline {
   color: $green;
