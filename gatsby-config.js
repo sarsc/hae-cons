@@ -8,6 +8,12 @@ module.exports = {
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-minify',
     {
+      resolve: 'gatsby-plugin-gdpr-cookies',
+      options: {
+        environments: ['production', 'development'],
+      },
+    },
+    {
       resolve: 'gatsby-plugin-sass',
       options: {
         useResolveUrlLoader: true,

@@ -10,6 +10,7 @@ import PropTypes from 'prop-types';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelopeSquare } from '@fortawesome/free-solid-svg-icons';
+import CookieConsent, { getCookieConsentValue } from 'react-cookie-consent';
 
 import { Link } from 'gatsby';
 // import { useStaticQuery, graphql } from "gatsby"
@@ -27,7 +28,7 @@ const Layout = ({ children, isMobile }) => {
   ];
 
   const isSticky = stickyNav();
-
+  console.warn(getCookieConsentValue(), 'COOKIIIES');
   return (
     <div>
       <Header
@@ -35,6 +36,20 @@ const Layout = ({ children, isMobile }) => {
         isSticky={isSticky}
         isMobile={isMobile}
       />
+      <CookieConsent
+        location="bottom"
+        buttonText="Accept"
+        enableDeclineButton
+        declineButtonText="Decline"
+        cookieName="gatsby-plugin-gdpr-cookies"
+        disableStyles
+        containerClasses="cookiesContainer"
+        buttonClasses="cookieAccept"
+        declineButtonClasses="cookieDecline"
+        contentStyle={{ margin: '0 50px' }}
+      >
+        This website uses cookies to enhance the user experience.
+      </CookieConsent>
       <div>
         <main>{children}</main>
       </div>
