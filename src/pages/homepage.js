@@ -6,8 +6,6 @@ import Services from './Services';
 import About from './About';
 import Contact from './Contact';
 import '../styles/index.scss';
-// import SEO from "../components/seo"
-// <SEO title="Home" />
 
 const IndexPage = () => {
   const [isMobile, setMobile] = useState(false);
