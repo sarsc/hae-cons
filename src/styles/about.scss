@@ -1,5 +1,5 @@
 .aboutContainer {
-  background-image: linear-gradient(rgba(74, 73, 73, 0.3), rgba(74, 73, 73, 0.3)), url('../assets/about-img.jpg');
+  background-image: linear-gradient(rgba(74, 73, 73, 0.4), rgba(74, 73, 73, 0.3)), url('../assets/about-img.jpg');
   background-size: cover;
   flex-direction: column;
   align-items: center;
@@ -26,12 +26,12 @@
 
 .pageTitle {
   text-align: center;
-  margin: 100px;
   margin: 0 16px;
-  
+
   @media (min-width: 768px)  {
     margin: 0 100px;
   }
+
   @media (min-width: 1200px)  {
     text-align: right;
     margin: 0;
@@ -43,26 +43,30 @@
   background-color: #fff;
   opacity: 0.8;
   border-radius: 6px;
-  padding: 20px;
+  padding: 30px;
   margin: 0 16px;
+  
   p {
     color: #000;
     font-weight: 100;
-    // padding-bottom: 20px;
   }
   
   span {
     padding-right: 5px;
     font-weight: 700;
     font-size: 18px;
+
     @media (min-width: 480px)  {
       font-size: 21px;
     }
   }
   
-  
+  @media (min-width: 480px)  {
+    margin: 0 34px;
+  }
+
   @media (min-width: 768px)  {
-    padding: 30px;
+    padding: 40px;
     margin: 0 100px;
   }
   

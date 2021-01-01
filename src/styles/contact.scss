@@ -6,13 +6,22 @@
   background-image: linear-gradient(rgba(74, 73, 73, 0.3), rgba(74, 73, 73, 0.3)), url('../assets/contact-img.jpg');
   background-position: center;
   background-size: cover;
-  padding: 50px 16px !important; 
   box-sizing: border-box;
 
   @media (min-width: 1200px) {
-    padding: 0; 
     width: 700px;
     align-items: flex-end;
+  }
+}
+
+.pageContainer.contactContainer {
+  padding: 80px 30px;
+
+  @media (min-width: 480px) {
+    padding: 80px 50px; 
+  }
+  @media (min-width: 768px) {
+    padding: 70px 100px; 
   }
 }
 
@@ -20,17 +29,16 @@
   background: rgba(255, 255, 255, 0.8);
   border-radius: 6px;
   padding: 20px;
-  margin: 0 16px;
   width: 100%;
   box-sizing: border-box;
 
   @media (min-width: 768px) {
     padding: 30px;
-    width: 60%;
+    width: 80%;
   }
 
   @media (min-width: 1200px) {
-    width: 700px;
+    width: 60%;
     margin: 0;
   }
 }

@@ -6,9 +6,10 @@ $secondary: #EDEBE8;
   display: flex;
 }
 
-.servicesContainer {
+.pageContainer.servicesContainer {
   flex-direction: column;
-
+  padding:0 ;
+ 
   @media (min-width: 1200px)  {
     flex-direction: row;
   }
@@ -18,25 +19,30 @@ $secondary: #EDEBE8;
   background-color: $secondary;
   justify-content: center;
   @media (min-width: 1200px)  {
-    padding-left: 100px;
-    padding-left: 100px;
+    padding-left: 50px;
     align-items: center;
   }
 }
 
 .rightText {
   align-items: center;
-  padding: 20px;
-  margin: 30px 16px;
+  justify-content: center;
+  height: 100%;
+  padding: 80px 30px; 
+
+  @media (min-width: 480px)  {
+    padding: 80px 50px;
+  }
 
   @media (min-width: 768px) {
-    margin: 0 100px;
-    padding: 50px 0;
+    padding: 70px 100px; 
   }
 
   @media (min-width: 1200px) {
     margin: 0;
     margin-left: 50px;
+    padding: 30px 50px 30px 0;
+    // padding: 100px 50px 100px 0; 
   }
 }
 
@@ -82,7 +88,7 @@ $secondary: #EDEBE8;
     margin-bottom: 16px;
 
     h4 {
-      font-size: 22px;
+      font-size: 24px;
     }
 
     span {
@@ -91,6 +97,9 @@ $secondary: #EDEBE8;
   }
 
   @media (min-width: 1024px) {
+    h4 {
+      font-size: 26px;
+    }
     span {
       font-size: 40px;
     }
@@ -148,7 +157,7 @@ li::before {
   }
 
   @media (min-width: 1200px)  {
-    column-gap: 0;
+    column-gap: 20px;
     row-gap: 10px;
     grid-template-areas: 
       "main1 ."
