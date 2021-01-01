@@ -8,11 +8,11 @@
 }
 
 .videoContainer {
-  background-image: url('../assets/forest-img.jpg');
+  background-image: url('../assets/forest.jpg');
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  
+
   video {
     height: 100%;
     width: 100%;
@@ -20,7 +20,7 @@
   }
 
   @media only screen 
-  and (max-width: 480px) {
+  and (max-width: 768px) {
     video {
       display: none;
     }
@@ -37,5 +37,5 @@
   position: absolute;
   top: 0;
   left: 0;
-  background: rgba(0,0,0,0.3);
+  background: rgba(0,0,0,0.2);
 }

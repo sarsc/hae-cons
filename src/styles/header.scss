@@ -1,5 +1,5 @@
 $green: #42B390;
-$secondary: #c5bdb4; 
+$secondary: #EDEBE8; 
 
 .navbar, .linksContainer {
   display: flex;
@@ -27,7 +27,7 @@ $secondary: #c5bdb4;
 }
 
 .stickyNav {
-  transition: 0.7s background-color ease-in;
+  transition: 0.8s background-color ease-in;
   position: fixed;
   top: 0;
   right: 0; //fix full width margin on the left 

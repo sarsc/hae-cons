@@ -11,7 +11,7 @@ const IndexPage = () => {
   const [isMobile, setMobile] = useState(false);
 
   useEffect(() => {
-    if (window.innerWidth <= 480) {
+    if (window.innerWidth <= 768) {
       setMobile(true);
     }
   });

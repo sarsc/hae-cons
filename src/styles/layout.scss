@@ -59,29 +59,37 @@ h2 {
   width: 100%;
   box-sizing: border-box;
   color: $green;
-  font-size: 14px;
+  font-size: 12px;
   
   @media (min-width: 768px) {
     flex-direction: row;
     justify-content: space-between;
-    font-size: 16px;
   }
 
   span {
     padding-right: 15px;
   }
+  
   a {
     text-decoration: none;
     color: $green;
   }
+
   .social {
-    @media (max-width: 768px) {
-      padding-top: 8px;
+    font-size: 16px;
+    padding-top: 8px;
+
+    @media (min-width: 768px) {
+     font-size: 20px;
     }
   }
+
   p {
-    padding-top: 18px;
-    font-size: 12px;
+    padding-top: 8px;
+    text-align: center;
+    @media (min-width: 768px) {
+      text-align: left;
+    }
   }
 }
 
