@@ -1,8 +1,8 @@
 import PropTypes from 'prop-types';
 import React from 'react';
-import { AnchorLink } from 'gatsby-plugin-anchor-links';
-import { slide as Menu } from 'react-burger-menu';
+import scrollTo from 'gatsby-plugin-smoothscroll';
 
+import { slide as Menu } from 'react-burger-menu';
 import '../styles/header.scss';
 
 const Header = ({ menuLinks, isSticky, isMobile }) => {
@@ -10,20 +10,18 @@ const Header = ({ menuLinks, isSticky, isMobile }) => {
     <div className="linksContainer">
       {menuLinks.map((link) => (
         <div key={link.name}>
-          <AnchorLink
+          <button
             className="link"
-            to={`/homepage#${link.value}`}
             title={link.name}
-            stripHash
-            id={`${link.value}`}
+            type="button"
+            onClick={() => scrollTo(`#${link.value}`)}
           >
             {link.name}
-          </AnchorLink>
+          </button>
         </div>
       ))}
     </div>
   );
-
   return (
     <header className="headerContainer">
       {!isMobile
@@ -36,14 +34,14 @@ const Header = ({ menuLinks, isSticky, isMobile }) => {
           <Menu right>
             {menuLinks.map((link) => (
               <div key={link.name}>
-                <AnchorLink
-                  className="link menu-item"
-                  to={`/homepage#${link.value}`}
+                <button
+                  className="link"
                   title={link.name}
-                  stripHash
+                  type="button"
+                  onClick={() => scrollTo(`#${link.value}`)}
                 >
                   {link.name}
-                </AnchorLink>
+                </button>
               </div>
             ))}
           </Menu>

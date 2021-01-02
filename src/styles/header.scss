@@ -1,6 +1,12 @@
 $green: #42B390;
 $secondary: #EDEBE8; 
 
+.headerContainer {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
 .navbar, .linksContainer {
   display: flex;
 }
@@ -8,27 +14,28 @@ $secondary: #EDEBE8;
 .navbar {
   padding: 24px 24px;
   justify-content: flex-end;
-  position: absolute;
-  top: 0;
-  right: 0;
-}
-
-.navbarTransparent{
-  background-color: transparent;
 }
 
 .link {
   color: #fff;
-  text-decoration: none;
+  border: none;
+  background-color: transparent;
   padding-left: 3rem;
   font-size: 20px;
   text-transform: uppercase;
   font-weight: 300;
-  text-shadow: 0 0.5px 2px #211f1f;
+}
+
+.navbarTransparent{
+  background-color: transparent;
+
+  .link {
+   text-shadow: 0 0.5px 2px #211f1f;
+  }
 }
 
 .stickyNav {
-  transition: 0.8s background-color ease-in;
+  transition: 0.4s background-color ease-in;
   position: fixed;
   top: 0;
   right: 0; //fix full width margin on the left 
@@ -37,10 +44,9 @@ $secondary: #EDEBE8;
   opacity: 0.95;
   z-index:11;
   .link {
-    color: black;
-  }
+    color: #000;
+   }
 }
-
 
 // ** react-burger-menu  **
 
@@ -59,10 +65,10 @@ $secondary: #EDEBE8;
   border-radius: 2px;
 }
 
-/* Color/shape of burger icon bars on hover*/
-.bm-burger-bars-hover {
-  background: $green;
-}
+// /* Color/shape of burger icon bars on hover*/
+// .bm-burger-bars-hover {
+//   background: $green;
+// }
 
 /* Position and sizing of clickable cross button */
 .bm-cross-button {
