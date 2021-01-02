@@ -18,6 +18,11 @@ $secondary: #EDEBE8;
 .leftText {
   background-color: $secondary;
   justify-content: center;
+
+  h2 {
+    font-weight: 700;
+  }
+  
   @media (min-width: 1200px)  {
     padding-left: 50px;
     align-items: center;
