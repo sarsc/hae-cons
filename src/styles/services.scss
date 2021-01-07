@@ -24,8 +24,11 @@ $secondary: #EDEBE8;
   }
   
   @media (min-width: 1200px)  {
-    padding-left: 50px;
+    padding-left: 90px;
     align-items: center;
+  }
+
+  @media (min-width: 1440px)  {
   }
 }
 
@@ -44,11 +47,13 @@ $secondary: #EDEBE8;
   }
 
   @media (min-width: 1200px) {
-    margin: 0;
-    margin-left: 50px;
-    padding: 30px 50px 30px 0;
-    // padding: 100px 50px 100px 0; 
+    padding: 30px 50px 30px 50px;
   }
+
+  @media (min-width: 1440px)  {
+    // padding: 100px 70.5px 150px 70.5px; 
+  }
+
 }
 
 .headingContainer {
@@ -86,7 +91,6 @@ $secondary: #EDEBE8;
     font-size: 20px;
     padding: 6px 8px;
     margin-right: 8px;
-    border-radius: 4px; 
   }
 
   @media (min-width: 768px) {
@@ -113,7 +117,6 @@ $secondary: #EDEBE8;
 
 .servicesTitles {
   color: #1F1F1F;
-  font-size: 24px;
   font-weight: 700;
 }
 
@@ -151,10 +154,8 @@ li::before {
 
 .grid {
   display: grid;
-  grid-template-rows: auto;
   grid-template-columns: 1fr;
   row-gap: 30px;
-
   @media (min-width: 768px) {
     grid-template-columns: 1fr 1fr;
     row-gap: 50px;
@@ -162,12 +163,13 @@ li::before {
   }
 
   @media (min-width: 1200px)  {
-    column-gap: 20px;
+    column-gap: 30px;
     row-gap: 10px;
     grid-template-areas: 
       "main1 ."
       ". main2"
       "main3 ."
       ". main4";
+    margin: 30px 0;
   }
 }

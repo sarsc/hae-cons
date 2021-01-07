@@ -30,7 +30,7 @@ $secondary: #EDEBE8;
   background-color: transparent;
 
   .link {
-   text-shadow: 0 0.5px 2px #211f1f;
+   text-shadow: 0 0.5px 2px $main;
   }
 }
 
@@ -43,8 +43,9 @@ $secondary: #EDEBE8;
   width: 100%;
   opacity: 0.95;
   z-index:11;
+  box-shadow: 0 1px 5px rgba(33, 31, 31, 0.2);
   .link {
-    color: #000;
+    color: rgb(24, 23, 23);
    }
 }
 

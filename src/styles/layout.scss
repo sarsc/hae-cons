@@ -3,6 +3,7 @@
 
 $secondary: #EDEBE8; 
 $green: #42B390;
+$main: #1c1c1c;
 
 html, body {
   font-family: 'Lato', sans-serif;
@@ -11,9 +12,9 @@ html, body {
   overflow-x: hidden;
   letter-spacing: 0.01rem;
   font-weight: 300;
-
+  color: $main;
   @media (min-width: 768px)  {
-    font-size: 20px;
+    font-size: 16px;
   }
 }
 
@@ -22,10 +23,12 @@ h1 {
   text-transform: uppercase;
   font-size: 30px;
   margin-bottom: 30px;
+
   @media (min-width: 480px)  {
     margin-bottom: 10px;
     font-size: 40px;
   }
+  
   @media (min-width: 1020px)  {
     font-size: 60px;
   }
@@ -34,6 +37,7 @@ h1 {
 h2 {
   font-weight: 900;
   font-size: 18px;
+
   @media (min-width: 768px)  {
     font-size: 22px;
   }
@@ -107,7 +111,7 @@ h2 {
   bottom: 0;
   left: 0;
   background: rgba(225, 225, 225, 0.8);
-  color: #000;
+  color: $main;
   width: 100%;
   z-index: 999;
   padding: 10px 0;
