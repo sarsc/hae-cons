@@ -7,12 +7,12 @@ module.exports = {
   plugins: [
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-minify',
-    {
-      resolve: 'gatsby-plugin-gdpr-cookies',
-      options: {
-        environments: ['production', 'development'],
-      },
-    },
+    // {
+    //   resolve: 'gatsby-plugin-gdpr-cookies',
+    //   options: {
+    //     environments: ['production', 'development'],
+    //   },
+    // },
     {
       resolve: 'gatsby-plugin-sass',
       options: {
@@ -37,7 +37,9 @@ module.exports = {
         background_color: '#663399',
         theme_color: '#663399',
         display: 'minimal-ui',
+        icon: 'src/assets/icon.png',
       },
     },
+    'gatsby-plugin-netlify-cache',
   ],
 };

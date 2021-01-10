@@ -14,7 +14,7 @@ $main: #1c1c1c;
   border-radius: 6px;
   font-size: 16px;
   padding: 10px;
-}
+}   
 
 .formContainer {
   width: 100%;
@@ -28,7 +28,7 @@ $main: #1c1c1c;
 .inputContainer {
   text-align: left;
   margin-bottom: 12px;
-  color $main;
+  color: $main;
   opacity: 0.8;
   label {
     margin-bottom: 4px;
