@@ -22,9 +22,12 @@ $main: #1c1c1c;
   border: none;
   background-color: transparent;
   padding-left: 3rem;
-  font-size: 20px;
+  font-size: 18px;
   text-transform: uppercase;
   font-weight: 300;
+  @media (min-width: 1920px) {
+    font-size: 24px;
+  }
 }
 
 .navbarTransparent{

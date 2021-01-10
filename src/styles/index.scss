@@ -19,12 +19,12 @@
   padding: 80px 0;
 
   @media (min-width: 1200px)  {
-    padding: 100px;
+    padding: 150px 100px;
     box-sizing: border-box;
   }
 
-  // @media (min-width: 1440px)  {
-  //   padding: 150px;
-  //   box-sizing: border-box;
-  // }
+  @media (min-width: 1920px)  {
+    padding: 200px;
+    box-sizing: border-box;
+  }
 }
