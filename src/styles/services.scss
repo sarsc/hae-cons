@@ -2,7 +2,7 @@ $green: #42B390;
 $secondary: #EDEBE8;
 
 
-.leftText, .rightText, .gridHeader, .servicesContainer {
+.leftText, .rightText, .gridHeader, .servicesContainer, .service {
   display: flex;
 }
 
@@ -123,22 +123,30 @@ $secondary: #EDEBE8;
   font-weight: 700;
 }
 
-ul {
-  list-style: none;
-}
-
-li {
-  margin-bottom: 8px;
-  @media (min-width: 768px)  {
-    margin-bottom:14px;
+.service {
+  .listDots {
+    padding: 8px;
+    color: $green;
+    font-size: 5px;
+    text-align: center;
   }
 }
 
-li::before {
-  content: "\2022";
-  color: $green;
-  padding-right: 2px;
-}
+// ul {
+//   list-style: none;
+// }
+
+// li {
+//   margin-bottom: 8px;
+//   @media (min-width: 768px)  {
+//     margin-bottom:14px;
+//   }
+// }
+
+// li::before {
+//   content: "\2022";
+//   padding-right: 2px;
+// }
 
 @media (min-width: 1200px)  {
   .text1 {

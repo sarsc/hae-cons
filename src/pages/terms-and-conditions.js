@@ -48,8 +48,7 @@ export default () => (
       <p>9.1 HAE reserves the right to change the content of packages unless quoted in writing and then are subject to a maximum guarantee of 1 month from the date written. </p>
       <p>9.2 The consultation session is to be up to 1 hours duration at a location convenient for both Client and HAE. </p>
       <p>9.3 File formats supplied of the Digital Assets will be .rvt, .rfa and .pdf Privacy </p>
-      <p>10.1 To contact HAE regarding privacy you can email us at </p>
-      <p>info.haeconsultants@gmail.com </p>
+      <p>10.1 To contact HAE regarding privacy you can email us at info.haeconsultants@gmail.com </p>
       <p>10.2 We are committed to protecting your privacy. We will only use the information that we collect about you lawfully. </p>
       <p>10.3 Our full privacy policy is available on our website www.haeconsultants.com.</p>
     </div>

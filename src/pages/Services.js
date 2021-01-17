@@ -1,28 +1,29 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCircle } from '@fortawesome/free-solid-svg-icons';
 
 import '../styles/services.scss';
 
 const servicesInfo = [
   {
     name: 'Modelling',
-    text: ['BIM Level 2 Compliant Landscape Model development using Revit.'],
+    text: ['BIM Level 2 Compliant Landscape Model development using Revit'],
   },
   {
     name: 'Information Management',
-    text: ['Landscape Revit Model Revision.', 'Quality Control and Clash Detection Reports.'],
+    text: ['Landscape Revit Model Revision', 'Quality Control and Clash Detection Reports'],
   },
   {
     name: 'BIM Strategic Consultancy',
     text: [
-      'BIM Documents support for all phases',
-      'Pre-Contract (EIR, PQQ’s, BEP) Contract (BEP,TIDP, MIDP, MDPT, CIC) Post-Contract (BEP, TIDP, MIDP, MDPT)',
+      'BIM Documents phases: Pre-Contract (EIR, PQQ’s, BEP) Contract (BEP,TIDP, MIDP, MDPT, CIC) Post-Contract (BEP, TIDP, MIDP, MDPT)',
     ],
   },
   {
     name: 'BIM Implementation',
     text: [
       'Workflow Coordination and BIM Strategic Implementation',
-      'Revit Template for Landscape Architecture.',
+      'Revit Template for Landscape Architecture',
     ],
   },
 ];
@@ -37,9 +38,14 @@ export default () => {
         </span>
         <h4 className="servicesTitles">{service.name}</h4>
       </div>
-      <ul className="service">
-        {service.text.map((text) => (<li>{text}</li>))}
-      </ul>
+      <div>
+        {service.text.map((text) => (
+          <div className="service">
+            <FontAwesomeIcon icon={faCircle} className="listDots" />
+            <p>{text}</p>
+          </div>
+        ))}
+      </div>
     </div>
   ));
 
@@ -48,7 +54,7 @@ export default () => {
       <div className="leftSideContainer leftText">
         <div className="headingContainer">
           <h1 className="heading">our services</h1>
-          <h2>BIM Consultancy for Landscape Architecture.</h2>
+          <h2>BIM Consultancy for Landscape Architecture</h2>
         </div>
       </div>
       <div className="rightSideContainer rightText">
