@@ -48,7 +48,7 @@ const Layout = ({ children, isMobile }) => {
         <main>{children}</main>
       </div>
       <footer className="footer">
-        <Logo scale={0.4} />
+        <Logo scale={0.2} />
         <div className="linksFooter">
           <div className="linksLeft">
             <Link to="/privacy-policy">Privacy Policy</Link>
