@@ -11,8 +11,8 @@ import stickyNav from '../stickyNav';
 import '../styles/layout.scss';
 
 const Layout = ({ children, isMobile }) => {
-  const imagesCredits = 'Images credits';
-  const showCredits = 'FullName/Scopio, FullName/Scopio';
+  const imagesCredits = 'Images Credits';
+  const showCredits = 'Michael Syke/Scopio, Nikolas Gogstad/Scopio';
   const [creditsText, setCreditsText] = useState(imagesCredits);
 
   const links = [
@@ -50,11 +50,9 @@ const Layout = ({ children, isMobile }) => {
       <footer className="footer">
         <Logo scale={0.4} />
         <div className="linksFooter">
-          <div>
-            <span>
-              <Link to="/privacy-policy">Privacy Policy</Link>
-            </span>
-            <Link to="/terms-and-conditions">Terms and Conditions</Link>
+          <div className="linksLeft">
+            <Link to="/privacy-policy">Privacy Policy</Link>
+            <span><Link to="/terms-and-conditions">Terms and Conditions</Link></span>
             <div
               onMouseOver={() => setCreditsText(showCredits)}
               onFocus={() => setCreditsText(showCredits)}
