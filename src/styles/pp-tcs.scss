@@ -1,0 +1,43 @@
+$secondary: #EDEBE8;
+
+.topContainer {
+  padding: 80px 0;
+
+  background-color: $secondary;
+  width: 100%;
+  h1 {
+    text-align: center;
+  }
+}
+
+.policyContainer {
+  padding: 80px;
+
+  @media (min-width: 1200px)  {
+    padding: 150px
+  }
+
+  @media (min-width: 1920px)  {
+    padding: 200px;
+  }
+
+  p {
+    padding-bottom: 16px;
+  }
+
+  .textStrong {
+    font-size: 20px;
+    font-weight: 700;
+  }
+  
+  ol {
+    li {
+    margin-left: 14px;
+    }
+
+    li::before {
+      content: "";
+    }
+  }
+}
+

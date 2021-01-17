@@ -5,9 +5,11 @@ import '../styles/video.scss';
 const Video = () => (
   <div className="videoContainer">
     <video
+      playsInline
       autoPlay
       muted
       loop
+      poster="../assets/forest-img.jpg"
     >
       <source src={video} type="video/mp4" />
     </video>

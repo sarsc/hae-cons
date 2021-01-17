@@ -34,8 +34,6 @@ module.exports = {
         name: 'Hae Consultants',
         short_name: 'Hae Consultants',
         start_url: '/',
-        background_color: '#663399',
-        theme_color: '#663399',
         display: 'minimal-ui',
         icon: 'src/assets/icon.png',
       },

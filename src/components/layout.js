@@ -52,9 +52,9 @@ const Layout = ({ children, isMobile }) => {
         <div className="linksFooter">
           <div>
             <span>
-              <Link to="/">Privacy Policy</Link>
+              <Link to="/privacy-policy">Privacy Policy</Link>
             </span>
-            <Link to="/">Terms and Conditions</Link>
+            <Link to="/terms-and-conditions">Terms and Conditions</Link>
             <div
               onMouseOver={() => setCreditsText(showCredits)}
               onFocus={() => setCreditsText(showCredits)}
