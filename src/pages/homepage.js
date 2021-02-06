@@ -25,6 +25,7 @@ const IndexPage = () => {
           <Logo scale={isMobile ? 0.7 : 1} />
         </div>
       </div>
+      <div className="lineBreak" />
       <section id="about">
         <About />
       </section>

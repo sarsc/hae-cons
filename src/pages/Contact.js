@@ -5,7 +5,7 @@ import '../styles/contact.scss';
 export default () => (
   <div className="pageContainer contactContainer">
     <div className="">
-      <h1 className="heading">be in touch</h1>
+      <h1 className="heading">Connect With Us</h1>
     </div>
     <div className="contactFormContainer">
       <ContactForm />

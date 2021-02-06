@@ -76,6 +76,7 @@ $secondary: #EDEBE8;
     border-right: none;
     padding-bottom: 70px;
     text-align: left;
+    padding: 90px 50px;
   }
 }
 
@@ -138,23 +139,6 @@ $secondary: #EDEBE8;
     display: block;
   }
 }
-
-
-// ul {
-//   list-style: none;
-// }
-
-// li {
-//   margin-bottom: 8px;
-//   @media (min-width: 768px)  {
-//     margin-bottom:14px;
-//   }
-// }
-
-// li::before {
-//   content: "\2022";
-//   padding-right: 2px;
-// }
 
 @media (min-width: 1200px)  {
   .text1 {
