@@ -26,6 +26,10 @@ const IndexPage = () => {
         </div>
       </div>
       <div className="lineBreak" />
+      {/** <div className="lineBreak"
+       *  style={{ textAlign: 'center', padding: '50px', fontSize: '30px' }}>
+       * We will help you to better address and shape a dynamic world through BIM</div> * */}
+
       <section id="about">
         <About />
       </section>
