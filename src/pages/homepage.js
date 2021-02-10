@@ -10,12 +10,28 @@ import '../styles/index.scss';
 const IndexPage = () => {
   const [isMobile, setMobile] = useState(false);
 
-  useEffect(() => {
-    if (window.innerWidth <= 768) {
-      setMobile(true);
-    }
-  });
+  const getWindowWidth = () => window.innerWidth
+  || document.documentElement.clientWidth
+  || document.body.clientWidth;
 
+  const [windowWidth, setWindowWidth] = useState(getWindowWidth());
+
+  const mobileScreen = () => {
+    setWindowWidth(getWindowWidth());
+    if (windowWidth <= 768) {
+      setMobile(true);
+    } else {
+      setMobile(false);
+    }
+  };
+
+  useEffect(() => {
+    mobileScreen();
+    console.warn('here');
+    window.addEventListener('resize', mobileScreen);
+    return () => window.removeEventListener('resize', getWindowWidth);
+  });
+  console.warn(isMobile);
   return (
     <Layout isMobile={isMobile}>
       <div className="mainContainerVideo">
