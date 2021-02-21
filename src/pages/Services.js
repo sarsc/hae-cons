@@ -17,7 +17,10 @@ export default () => (
         <div className="text1">
           <div className="gridHeader">
             <span>01</span>
-            <h4 className="servicesTitles">Project Modelling</h4>
+            <h4 className="servicesTitles">
+              Project
+              <span>Modelling</span>
+            </h4>
           </div>
           <div>
             <div className="service">
@@ -33,7 +36,10 @@ export default () => (
         <div className="text2">
           <div className="gridHeader">
             <span>02</span>
-            <h4 className="servicesTitles">Information Management</h4>
+            <h4 className="servicesTitles">
+              Information
+              <span>Management</span>
+            </h4>
           </div>
           <div>
             <div className="service">
@@ -49,7 +55,10 @@ export default () => (
         <div className="text3">
           <div className="gridHeader">
             <span>03</span>
-            <h4 className="servicesTitles">BIM Strategic Consultancy</h4>
+            <h4 className="servicesTitles">
+              BIM Strategic
+              <span>Consultancy</span>
+            </h4>
           </div>
           <div className="service">
             <FontAwesomeIcon icon={faCircle} className="listDots" />
@@ -64,7 +73,10 @@ export default () => (
         <div className="text4">
           <div className="gridHeader">
             <span>04</span>
-            <h4 className="servicesTitles">BIM Implementation</h4>
+            <h4 className="servicesTitles">
+              BIM
+              <span>Implementation</span>
+            </h4>
           </div>
           <div>
             <div className="service">

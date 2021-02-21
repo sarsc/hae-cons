@@ -28,6 +28,9 @@ $main: #1c1c1c;
   @media (min-width: 1920px) {
     font-size: 24px;
   }
+  @media (max-width: 760px) {
+    color: $main;
+  }
 }
 
 .navbarTransparent{
@@ -97,7 +100,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
 
 /* General sidebar styles */
 .bm-menu {
-  background: $secondary;
+  background:  rgba(237, 235, 232, 0.85);
   padding: 20px;
 }
 
@@ -105,7 +108,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
 .bm-item-list {
   padding: 0.8em;
   display: flex;
-  justify-content: center;
+  // justify-content: center;
   flex-direction: column;
 }
 

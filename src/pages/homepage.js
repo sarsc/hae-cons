@@ -27,11 +27,11 @@ const IndexPage = () => {
 
   useEffect(() => {
     mobileScreen();
-    console.warn('here');
     window.addEventListener('resize', mobileScreen);
+
     return () => window.removeEventListener('resize', getWindowWidth);
   });
-  console.warn(isMobile);
+
   return (
     <Layout isMobile={isMobile}>
       <div className="mainContainerVideo">

@@ -1,5 +1,6 @@
 $green: #42B390;
 $secondary: #EDEBE8;
+$main: #1F1F1F;
 
 
 .leftText, .rightText, .gridHeader, .servicesContainer, .service {
@@ -88,7 +89,7 @@ $secondary: #EDEBE8;
     font-size: 18px;
   }
   
-  span {
+  > span {
     display: inline-block;
     font-weight: 900;
     background-color: $secondary;
@@ -97,7 +98,7 @@ $secondary: #EDEBE8;
     margin-right: 8px;
     border-radius: 4px;
   }
-
+  
   @media (min-width: 768px) {
     margin-bottom: 16px;
 
@@ -105,7 +106,7 @@ $secondary: #EDEBE8;
       font-size: 24px;
     }
 
-    span {
+   > span {
       font-size: 38px;
     }
   }
@@ -114,15 +115,19 @@ $secondary: #EDEBE8;
     h4 {
       font-size: 26px;
     }
-    span {
+    > span {
       font-size: 40px;
     }
   }
 }
-
+ 
 .servicesTitles {
-  color: #1F1F1F;
+  color: $main;
   font-weight: 700;
+
+  span {
+    display: block;
+  }
 }
 
 .service {
