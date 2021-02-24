@@ -9,27 +9,34 @@ import '../styles/index.scss';
 
 const IndexPage = () => {
   const [isMobile, setMobile] = useState(false);
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
-  const getWindowWidth = () => window.innerWidth
-  || document.documentElement.clientWidth
-  || document.body.clientWidth;
+  function debounce(func, ms) {
+    let timer;
+    return (_) => {
+      clearTimeout(timer);
+      timer = setTimeout((_) => {
+        timer = null;
+        // eslint-disable-next-line prefer-rest-params
+        func.apply(this, arguments);
+      }, ms);
+    };
+  }
 
-  const [windowWidth, setWindowWidth] = useState(getWindowWidth());
+  useEffect(() => {
+    const debounceResize = debounce(() => {
+      setWindowWidth(window.innerWidth);
+    }, 80);
 
-  const mobileScreen = () => {
-    setWindowWidth(getWindowWidth());
+    window.addEventListener('resize', debounceResize);
+
     if (windowWidth <= 768) {
       setMobile(true);
     } else {
       setMobile(false);
     }
-  };
 
-  useEffect(() => {
-    mobileScreen();
-    window.addEventListener('resize', mobileScreen);
-
-    return () => window.removeEventListener('resize', getWindowWidth);
+    return () => window.removeEventListener('resize', debounceResize);
   });
 
   return (
