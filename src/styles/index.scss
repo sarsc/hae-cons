@@ -36,8 +36,11 @@ $main: #1c1c1c;
 .lineBreak {
   // height: 20px; 
   text-align: center;
-  padding: 20px;
+  padding: 20px 34px;
   font-size: 30px;
   background: $secondary;
   border-top: 4px solid $green;
+  h2 {
+    font-weight: 700;
+  }
 }

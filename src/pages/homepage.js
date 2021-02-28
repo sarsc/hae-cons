@@ -9,10 +9,7 @@ import '../styles/index.scss';
 
 const IndexPage = () => {
   const [isMobile, setMobile] = useState(false);
-  const getWindowWidth = () => window.innerWidth
-  || document.documentElement.clientWidth
-  || document.body.clientWidth;
-  const [windowWidth, setWindowWidth] = useState(getWindowWidth());
+  const [windowWidth, setWindowWidth] = useState(0);
 
   function debounce(func, ms) {
     let timer;
@@ -27,8 +24,10 @@ const IndexPage = () => {
   }
 
   useEffect(() => {
+    setWindowWidth(window.innerWidth);
+
     const debounceResize = debounce(() => {
-      setWindowWidth(getWindowWidth());
+      setWindowWidth(window.innerWidth);
     }, 80);
 
     window.addEventListener('resize', debounceResize);
@@ -52,15 +51,9 @@ const IndexPage = () => {
         </div>
       </div>
       {/* <div className="lineBreak" /> */}
-      <div
-        className="lineBreak"
-        // style={{
-        //   textAlign: 'center', padding: '50px', fontSize: '30px', background: '#EDEBE7',
-        // }}
-      >
-        We will help you to better address and shape a dynamic world through BIM
+      <div className="lineBreak">
+        <h2>We will help you to better address and shape a dynamic world through BIM</h2>
       </div>
-
       <section id="about">
         <About />
       </section>
