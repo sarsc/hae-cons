@@ -12,8 +12,6 @@ const IndexPage = () => {
   const getWindowWidth = () => window.innerWidth
   || document.documentElement.clientWidth
   || document.body.clientWidth;
-  console.warn(document.documentElement.clientWidth);
-  console.warn(document.body.clientWidth);
   const [windowWidth, setWindowWidth] = useState(getWindowWidth());
 
   function debounce(func, ms) {
