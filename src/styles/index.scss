@@ -1,3 +1,6 @@
+$green: #42B390;
+$secondary: #EDEBE8; 
+$main: #1c1c1c;
 
 * {
   margin: 0;
@@ -31,5 +34,10 @@
 }
 
 .lineBreak {
-  height: 20px;
+  // height: 20px; 
+  text-align: center;
+  padding: 20px;
+  font-size: 30px;
+  background: $secondary;
+  border-top: 4px solid $green;
 }

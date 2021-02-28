@@ -25,6 +25,7 @@ $main: #1F1F1F;
   }
   
   @media (min-width: 1200px)  {
+    width: 35%;
     padding-left: 90px;
     align-items: center;
   }
@@ -49,6 +50,8 @@ $main: #1F1F1F;
   }
 
   @media (min-width: 1200px) {
+    justify-content: normal;
+    width: 65%;
     padding: 30px 50px 30px 50px;
   }
 
@@ -94,7 +97,7 @@ $main: #1F1F1F;
     font-weight: 900;
     background-color: $secondary;
     font-size: 20px;
-    padding: 6px 8px;
+    padding: 8px;
     margin-right: 8px;
     border-radius: 4px;
   }
@@ -166,12 +169,12 @@ $main: #1F1F1F;
   row-gap: 30px;
   @media (min-width: 768px) {
     grid-template-columns: 1fr 1fr;
+    column-gap: 100px;
     row-gap: 50px;
-    column-gap: 50px;
+    // column-gap: 50px;
   }
 
   @media (min-width: 1200px)  {
-    column-gap: 30px;
     row-gap: 10px;
     grid-template-areas: 
       "main1 ."
@@ -182,7 +185,7 @@ $main: #1F1F1F;
   }
 
   @media (min-width: 1920px)  {
-    column-gap: 100px;
+    // column-gap: 100px;
     row-gap: 30px;
     margin: 50px;
   }

@@ -6,7 +6,7 @@ export default () => (
   <div className="aboutContainer pageContainer">
     <div className="pageTitle">
       <h1 className="heading">Who We Are</h1>
-      <h2>We will help you to better address and shape a dynamic world through BIM</h2>
+      {/* <h2>We will help you to better address and shape a dynamic world through BIM</h2> */}
     </div>
     <div className="aboutTextContainer">
       <div className="separator">
