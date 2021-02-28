@@ -9,7 +9,12 @@ import '../styles/index.scss';
 
 const IndexPage = () => {
   const [isMobile, setMobile] = useState(false);
-  const [windowWidth, setWindowWidth] = useState(window && window.innerWidth);
+  const getWindowWidth = () => window.innerWidth
+  || document.documentElement.clientWidth
+  || document.body.clientWidth;
+  console.warn(document.documentElement.clientWidth);
+  console.warn(document.body.clientWidth);
+  const [windowWidth, setWindowWidth] = useState(getWindowWidth());
 
   function debounce(func, ms) {
     let timer;
@@ -25,7 +30,7 @@ const IndexPage = () => {
 
   useEffect(() => {
     const debounceResize = debounce(() => {
-      setWindowWidth(window.innerWidth);
+      setWindowWidth(getWindowWidth());
     }, 80);
 
     window.addEventListener('resize', debounceResize);
