@@ -13,8 +13,10 @@ $main: #1c1c1c;
 }
 
 .navbar {
-  padding: 24px 24px;
-  justify-content: flex-end;
+  @media (min-width: 760px) {
+    justify-content: flex-end;
+    padding: 24px 24px;
+  }
 }
 
 .link {
@@ -34,14 +36,18 @@ $main: #1c1c1c;
 }
 
 .navbarTransparent{
-  background-color: transparent;
-
-  .link {
-   text-shadow: 0 0.5px 2px $main;
+  @media (min-width: 760px) {
+    background-color: transparent;
+    color: $main;
+   
+    .link {
+     text-shadow: 0 0.5px 2px $main;
+    }
   }
 }
 
 .stickyNav {
+  @media (min-width: 760px) {
   transition: 0.4s background-color ease-in;
   position: fixed;
   top: 0;
@@ -54,6 +60,7 @@ $main: #1c1c1c;
   .link {
     color: rgb(24, 23, 23);
    }
+  }
 }
 
 // ** react-burger-menu  **
@@ -72,11 +79,6 @@ $main: #1c1c1c;
   background: #fff;
   border-radius: 2px;
 }
-
-// /* Color/shape of burger icon bars on hover*/
-// .bm-burger-bars-hover {
-//   background: $green;
-// }
 
 /* Position and sizing of clickable cross button */
 .bm-cross-button {
@@ -107,8 +109,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
 /* Wrapper for item list */
 .bm-item-list {
   padding: 0.8em;
-  display: flex;
-  // justify-content: center;
+  // display: flex;
   flex-direction: column;
 }
 

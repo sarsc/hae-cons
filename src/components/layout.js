@@ -22,7 +22,6 @@ const Layout = ({ children, isMobile }) => {
   ];
   const isSticky = stickyNav();
 
-  // console.warn(getCookieConsentValue(), '');
   return (
     <div>
       <Header

@@ -9,7 +9,7 @@ import '../styles/index.scss';
 
 const IndexPage = () => {
   const [isMobile, setMobile] = useState(false);
-  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  const [windowWidth, setWindowWidth] = useState(window && window.innerWidth);
 
   function debounce(func, ms) {
     let timer;

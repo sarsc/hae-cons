@@ -6,46 +6,32 @@ import { slide as Menu } from 'react-burger-menu';
 import '../styles/header.scss';
 
 const Header = ({ menuLinks, isSticky, isMobile }) => {
-  const displayLinks = (
-    <div className="linksContainer">
-      {menuLinks.map((link) => (
-        <div key={link.name}>
-          <button
-            className="link"
-            title={link.name}
-            type="button"
-            onClick={() => scrollTo(`#${link.value}`)}
-          >
-            {link.name}
-          </button>
-        </div>
-      ))}
+  const displayLinks = menuLinks.map((link) => (
+    <div key={link.name}>
+      <button
+        className="link"
+        title={link.name}
+        type="button"
+        onClick={() => scrollTo(`#${link.value}`)}
+      >
+        {link.name}
+      </button>
     </div>
-  );
+  ));
+
   return (
     <header className="headerContainer">
-      {!isMobile
-        ? (
-          <nav className={isSticky ? 'stickyNav navbar' : 'navbar navbarTransparent'}>
+      <nav className={isSticky ? 'stickyNav navbar' : 'navbar navbarTransparent'}>
+        {!isMobile ? (
+          <div className="linksContainer">
             {displayLinks}
-          </nav>
-        )
-        : (
+          </div>
+        ) : (
           <Menu right>
-            {menuLinks.map((link) => (
-              <div key={link.name}>
-                <button
-                  className="link"
-                  title={link.name}
-                  type="button"
-                  onClick={() => scrollTo(`#${link.value}`)}
-                >
-                  {link.name}
-                </button>
-              </div>
-            ))}
+            {displayLinks}
           </Menu>
         )}
+      </nav>
     </header>
   );
 };

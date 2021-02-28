@@ -24,7 +24,6 @@ class ContactForm extends React.Component {
 
    // isFormValid = () => {
    //  const err = Object.values(this.state.errors)
-   //  console.warn(err)
    // }
 
 
