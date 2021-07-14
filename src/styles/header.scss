@@ -1,5 +1,5 @@
 $green: #42B390;
-$secondary: #EDEBE8; 
+$secondary: #EDEBE8;
 $main: #1c1c1c;
 
 .headerContainer {
@@ -8,7 +8,8 @@ $main: #1c1c1c;
   right: 0;
 }
 
-.navbar, .linksContainer {
+.navbar,
+.linksContainer {
   display: flex;
 }
 
@@ -27,39 +28,42 @@ $main: #1c1c1c;
   font-size: 18px;
   text-transform: uppercase;
   font-weight: 300;
+
   @media (min-width: 1920px) {
     font-size: 24px;
   }
+
   @media (max-width: 760px) {
     color: $main;
   }
 }
 
-.navbarTransparent{
+.navbarTransparent {
   @media (min-width: 760px) {
     background-color: transparent;
     color: $main;
-   
+
     .link {
-     text-shadow: 0 0.5px 2px $main;
+      text-shadow: 0 0.5px 2px $main;
     }
   }
 }
 
 .stickyNav {
   @media (min-width: 760px) {
-  transition: 0.4s background-color ease-in;
-  position: fixed;
-  top: 0;
-  right: 0; //fix full width margin on the left 
-  background-color: #fff;
-  width: 100%;
-  opacity: 0.85;
-  z-index:11;
-  box-shadow: 0 1px 5px rgba(33, 31, 31, 0.2);
-  .link {
-    color: rgb(24, 23, 23);
-   }
+    transition: 0.4s background-color ease-in;
+    position: fixed;
+    top: 0;
+    right: 0; //fix full width margin on the left 
+    background-color: #fff;
+    width: 100%;
+    opacity: 0.85;
+    z-index: 11;
+    box-shadow: 0 1px 5px rgba(33, 31, 31, 0.2);
+
+    .link {
+      color: rgb(24, 23, 23);
+    }
   }
 }
 
@@ -76,7 +80,7 @@ $main: #1c1c1c;
 
 /* Color/shape of burger icon bars */
 .bm-burger-bars {
-  background: #fff;
+  background: $green;
   border-radius: 2px;
 }
 
@@ -102,7 +106,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
 
 /* General sidebar styles */
 .bm-menu {
-  background:  rgba(237, 235, 232, 0.85);
+  background: rgba(237, 235, 232, 0.85);
   padding: 20px;
 }
 

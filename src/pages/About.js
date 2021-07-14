@@ -20,7 +20,7 @@ export default () => (
         </p>
         <p>
           <span>our purpose and core business</span>
-          is to help landscape designers to develop and deliver projects using bim.
+          is to help landscape architects to develop and deliver projects using bim.
         </p>
       </div>
     </div>

@@ -16,8 +16,8 @@ const Layout = ({ children, isMobile }) => {
   const [creditsText, setCreditsText] = useState(imagesCredits);
 
   const links = [
-    { value: 'services', name: 'Services' },
     { value: 'about', name: 'About' },
+    { value: 'services', name: 'Services' },
     { value: 'contact', name: 'Contact' },
   ];
   const isSticky = stickyNav();

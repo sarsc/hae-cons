@@ -9,7 +9,11 @@ export default () => (
     <div className="leftSideContainer leftText">
       <div className="headingContainer">
         <h1 className="heading">Our Services</h1>
-        <h2>BIM Consultancy for Landscape Architecture</h2>
+        <h2>
+          BIM Consultancy for
+          {' '}
+          <span>Landscape Architecture</span>
+        </h2>
       </div>
     </div>
     <div className="rightSideContainer rightText">
@@ -29,7 +33,7 @@ export default () => (
             </div>
             <div className="service">
               <FontAwesomeIcon icon={faCircle} className="listDots" />
-              <p>Landscape Model development using Revitt</p>
+              <p>Landscape Model development using Revit</p>
             </div>
           </div>
         </div>

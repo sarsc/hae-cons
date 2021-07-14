@@ -1,5 +1,5 @@
 $green: #42B390;
-$secondary: #EDEBE8; 
+$secondary: #EDEBE8;
 $main: #1c1c1c;
 
 * {
@@ -22,24 +22,24 @@ $main: #1c1c1c;
   width: 100%;
   padding: 80px 0;
 
-  @media (min-width: 1200px)  {
+  @media (min-width: 1200px) {
     padding: 150px 100px;
     box-sizing: border-box;
   }
 
-  @media (min-width: 1920px)  {
+  @media (min-width: 1920px) {
     padding: 200px;
     box-sizing: border-box;
   }
 }
 
 .lineBreak {
-  // height: 20px; 
   text-align: center;
   padding: 20px 34px;
   font-size: 30px;
   background: $secondary;
-  border-top: 4px solid $green;
+  border-top: 6px solid $green;
+
   h2 {
     font-weight: 700;
   }

@@ -3,15 +3,19 @@ $secondary: #EDEBE8;
 $main: #1F1F1F;
 
 
-.leftText, .rightText, .gridHeader, .servicesContainer, .service {
+.leftText,
+.rightText,
+.gridHeader,
+.servicesContainer,
+.service {
   display: flex;
 }
 
 .pageContainer.servicesContainer {
   flex-direction: column;
-  padding:0 ;
- 
-  @media (min-width: 1200px)  {
+  padding: 0;
+
+  @media (min-width: 1200px) {
     flex-direction: row;
   }
 }
@@ -22,15 +26,21 @@ $main: #1F1F1F;
 
   h2 {
     font-weight: 700;
+
+    @media (min-width: 1200px) {
+      span {
+        display: inline-block;
+      }
+    }
   }
-  
-  @media (min-width: 1200px)  {
+
+  @media (min-width: 1200px) {
     width: 35%;
     padding-left: 90px;
     align-items: center;
   }
 
-  @media (min-width: 1920px)  {
+  @media (min-width: 1920px) {
     padding-left: 150px;
   }
 }
@@ -39,14 +49,14 @@ $main: #1F1F1F;
   align-items: center;
   justify-content: center;
   height: 100%;
-  padding: 80px 30px; 
+  padding: 80px 30px;
 
-  @media (min-width: 480px)  {
+  @media (min-width: 480px) {
     padding: 80px 50px;
   }
 
   @media (min-width: 768px) {
-    padding: 70px 100px; 
+    padding: 70px 100px;
   }
 
   @media (min-width: 1200px) {
@@ -55,7 +65,7 @@ $main: #1F1F1F;
     padding: 30px 50px 30px 50px;
   }
 
-  @media (min-width: 1920px)  {
+  @media (min-width: 1920px) {
     // padding: 100px 70.5px 150px 70.5px; 
   }
 
@@ -65,15 +75,15 @@ $main: #1F1F1F;
   padding: 50px;
   text-align: center;
   padding-bottom: 30px;
-  
-  @media (max-width: 1200px)  {
+
+  @media (max-width: 1200px) {
     h2 {
       padding-bottom: 10px;
       border-bottom: 4px solid #fff;
     }
   }
-  
-  @media (min-width: 1200px)  {
+
+  @media (min-width: 1200px) {
     border: 4px solid #fff;
     border-top-left-radius: 6px;
     border-bottom-left-radius: 6px;
@@ -87,12 +97,12 @@ $main: #1F1F1F;
 .gridHeader {
   align-items: flex-end;
   margin-bottom: 8px;
-  
+
   h4 {
     font-size: 18px;
   }
-  
-  > span {
+
+  >span {
     display: inline-block;
     font-weight: 900;
     background-color: $secondary;
@@ -101,7 +111,7 @@ $main: #1F1F1F;
     margin-right: 8px;
     border-radius: 4px;
   }
-  
+
   @media (min-width: 768px) {
     margin-bottom: 16px;
 
@@ -109,7 +119,7 @@ $main: #1F1F1F;
       font-size: 24px;
     }
 
-   > span {
+    >span {
       font-size: 38px;
     }
   }
@@ -118,12 +128,13 @@ $main: #1F1F1F;
     h4 {
       font-size: 26px;
     }
-    > span {
+
+    >span {
       font-size: 40px;
     }
   }
 }
- 
+
 .servicesTitles {
   color: $main;
   font-weight: 700;
@@ -140,24 +151,29 @@ $main: #1F1F1F;
     font-size: 5px;
     text-align: center;
   }
+
   p {
-   padding-bottom: 20px;
+    padding-bottom: 20px;
   }
+
   span {
     display: block;
   }
 }
 
-@media (min-width: 1200px)  {
+@media (min-width: 1200px) {
   .text1 {
     grid-area: main1;
   }
+
   .text2 {
     grid-area: main2;
   }
+
   .text3 {
     grid-area: main3;
   }
+
   .text4 {
     grid-area: main4;
   }
@@ -167,6 +183,7 @@ $main: #1F1F1F;
   display: grid;
   grid-template-columns: 1fr;
   row-gap: 30px;
+
   @media (min-width: 768px) {
     grid-template-columns: 1fr 1fr;
     column-gap: 100px;
@@ -174,9 +191,9 @@ $main: #1F1F1F;
     // column-gap: 50px;
   }
 
-  @media (min-width: 1200px)  {
+  @media (min-width: 1200px) {
     row-gap: 10px;
-    grid-template-areas: 
+    grid-template-areas:
       "main1 ."
       ". main2"
       "main3 ."
@@ -184,7 +201,7 @@ $main: #1F1F1F;
     margin: 30px 0;
   }
 
-  @media (min-width: 1920px)  {
+  @media (min-width: 1920px) {
     // column-gap: 100px;
     row-gap: 30px;
     margin: 50px;
