@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 // import CookieConsent, { getCookieConsentValue } from 'react-cookie-consent';
 import { Link } from 'gatsby';
+import SEO from './seo';
 import Header from './header';
 import Logo from './svg/Logo';
 import stickyNav from '../stickyNav';
@@ -24,6 +25,7 @@ const Layout = ({ children, isMobile }) => {
 
   return (
     <div>
+      <SEO title="Hae BIM Landscape Consultants" />
       <Header
         menuLinks={links}
         isSticky={isSticky}

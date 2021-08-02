@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: 'HAE Consultants',
-    description: '',
+    description: 'BIM Landscape Consultants',
     author: '',
   },
   plugins: [

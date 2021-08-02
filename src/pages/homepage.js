@@ -50,7 +50,6 @@ const IndexPage = () => {
           <Logo scale={isMobile ? 0.7 : 1} />
         </div>
       </div>
-      {/* <div className="lineBreak" /> */}
       <div className="lineBreak">
         <h2>We will help you to better address and shape a dynamic world through BIM</h2>
       </div>

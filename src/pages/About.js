@@ -6,7 +6,6 @@ export default () => (
   <div className="aboutContainer pageContainer">
     <div className="pageTitle">
       <h1 className="heading">Who We Are</h1>
-      {/* <h2>We will help you to better address and shape a dynamic world through BIM</h2> */}
     </div>
     <div className="aboutTextContainer">
       <div className="separator">
@@ -15,7 +14,7 @@ export default () => (
           designers and developers of landscape architecture, urbanism and planning, technology and design strategy.
         </p>
         <p style={{ padding: '20px 0' }}>
-          <span>our missions</span>
+          <span>our mission</span>
           is to enable and improve the space humans use to interface with their natural, built and socially constructed environments including spaces, buildings, places, and experiences.
         </p>
         <p>
