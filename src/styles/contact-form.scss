@@ -2,7 +2,8 @@ $green: #42B390;
 $secondary: #EDEBE8;
 $main: #1c1c1c;
 
-.formContainer, .inputContainer{
+.formContainer,
+.inputContainer {
   display: flex;
   flex-direction: column;
 }
@@ -14,14 +15,16 @@ $main: #1c1c1c;
   border-radius: 6px;
   padding: 10px;
   font-size: 16px;
+
   @media (min-width: 1920px) {
     font-size: 20px;
   }
-}   
+}
 
 .formContainer {
   width: 100%;
   padding: 10px 10px;
+
   // box-sizing: border-box;
   @media (min-width: 768px) {
     padding: 10px 40px;
@@ -33,21 +36,26 @@ $main: #1c1c1c;
   margin-bottom: 12px;
   color: $main;
   opacity: 0.8;
+
   label {
     margin-bottom: 4px;
   }
-  input, textarea {
+
+  input,
+  textarea {
     border: 0;
     border-color: none;
     border-radius: 4px;
     padding: 10px;
   }
+
   span {
     margin-top: 8px;
     font-size: 14px;
     color: $green;
     opacity: 0.9;
   }
+
   textarea {
     font-family: Lato, sans-serif;
   }
@@ -62,12 +70,23 @@ $main: #1c1c1c;
   // margin: 15px;
   font-size: 18px;
   color: #fff;
+
   @media (min-width: 1200px) {
     width: 20%;
   }
 }
 
-textarea:focus, input:focus {
+.submitBtn:active {
+  // background-color: ;
+  transform: scale(0.95);
+}
+
+.submitBtn:disabled {
+  background-color: rgba(66, 179, 144, 0.7);
+}
+
+textarea:focus,
+input:focus {
   outline-color: rgba(66, 179, 144, 0.7);
 }
 

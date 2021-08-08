@@ -35,7 +35,11 @@
     "resolve-url-loader": "^4.0.0"
   },
   "devDependencies": {
-    "eslint": "^7.13.0",
+    "@babel/cli": "^7.14.8",
+    "@babel/core": "^7.15.0",
+    "@babel/preset-env": "^7.15.0",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.32.0",
     "eslint-config-airbnb": "^18.2.1",
     "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-jsx-a11y": "^6.4.1",
