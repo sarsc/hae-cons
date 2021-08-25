@@ -68,9 +68,9 @@ export default () => (
             <FontAwesomeIcon icon={faCircle} className="listDots" />
             <p>
               BIM Documents support for all phases:
-              <span style={{ paddingTop: '20px' }}>Pre-Contract (EIR, PQQ’s, BEP)</span>
-              <span>Contract (BEP,TIDP, MIDP, MDPT, CIC)</span>
-              <span>Post-Contract (BEP, TIDP, MIDP, MDPT)</span>
+              <span style={{ paddingTop: '20px' }}>- Pre-Contract (EIR, PQQ’s, BEP)</span>
+              <span style={{ paddingTop: '8px' }}>- Contract (BEP,TIDP, MIDP, MDPT, CIC)</span>
+              <span style={{ paddingTop: '8px' }}>- Post-Contract (BEP, TIDP, MIDP, MDPT)</span>
             </p>
           </div>
         </div>

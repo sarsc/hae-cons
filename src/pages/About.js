@@ -10,16 +10,16 @@ export default () => (
     <div className="aboutTextContainer">
       <div className="separator">
         <p>
-          <span>we are</span>
-          designers and developers of landscape architecture, urbanism and planning, technology and design strategy.
+          <span className="startText">we are</span>
+          Designers and Developers of Landscape Architecture, Urbanism, Planning, Technology and Design Strategy.
         </p>
         <p style={{ padding: '20px 0' }}>
-          <span>our mission</span>
-          is to enable and improve the space humans use to interface with their natural, built and socially constructed environments including spaces, buildings, places, and experiences.
+          <span className="startText">our mission</span>
+          is to enable and improve the use of spaces interfacing their natural and socially constructed environment including buildings, places and experiences.
         </p>
         <p>
-          <span>our purpose and core business</span>
-          is to help landscape architects to develop and deliver projects using bim.
+          <span className="startText">our purpose and core business</span>
+          are to help Landscape Architects to develop and deliver projects using BIM thought Standards and Templates were created to provide efficiency during the Design and Construction Phases.
         </p>
       </div>
     </div>

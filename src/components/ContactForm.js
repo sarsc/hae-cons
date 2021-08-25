@@ -41,21 +41,21 @@ deactivateSubmit = () => {
     if (this.deactivateSubmit()) {
       return;
     }
-    // const form = event.target;
-    // const data = new FormData(form);
-    // const xhr = new XMLHttpRequest();
-    // xhr.open(form.method, form.action);
-    // xhr.setRequestHeader('Accept', 'application/json');
-    // xhr.onreadystatechange = () => {
-    //   if (xhr.readyState !== XMLHttpRequest.DONE) return;
-    //   if (xhr.status === 200) {
-    //     form.reset();
-    //     this.setState({ statusSubmit: 'SUCCESS' });
-    //   } else {
-    //     this.setState({ statusSubmit: 'ERROR' });
-    //   }
-    // };
-    // xhr.send(data);
+    const form = event.target;
+    const data = new FormData(form);
+    const xhr = new XMLHttpRequest();
+    xhr.open(form.method, form.action);
+    xhr.setRequestHeader('Accept', 'application/json');
+    xhr.onreadystatechange = () => {
+      if (xhr.readyState !== XMLHttpRequest.DONE) return;
+      if (xhr.status === 200) {
+        form.reset();
+        this.setState({ statusSubmit: 'SUCCESS' });
+      } else {
+        this.setState({ statusSubmit: 'ERROR' });
+      }
+    };
+    xhr.send(data);
 
     this.setState({
       email: '',

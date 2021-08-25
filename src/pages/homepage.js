@@ -4,6 +4,7 @@ import Video from '../components/Video';
 import Logo from '../components/svg/Logo';
 import Services from './Services';
 import About from './About';
+import Info from './Info';
 import Contact from './Contact';
 import '../styles/index.scss';
 
@@ -50,10 +51,11 @@ const IndexPage = () => {
           <Logo scale={isMobile ? 0.7 : 1} />
         </div>
       </div>
-      <div className="lineBreak">
+      {/* <div className="lineBreak">
         <h2>We will help you to better address and shape a dynamic world through BIM</h2>
-      </div>
+      </div> */}
       <section id="about">
+        <Info />
         <About />
       </section>
       <section id="services">

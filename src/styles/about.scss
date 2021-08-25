@@ -12,15 +12,15 @@ $main: #1c1c1c;
   h1 {
     text-shadow: 0 0.5px 2px $main;
   }
-  
+
   h2 {
     text-transform: none;
     font-style: italic;
     margin-bottom: 70px;
     text-shadow: 0 0.5px 2px $main;
   }
-  
-  @media (min-width: 1200px)  {
+
+  @media (min-width: 1200px) {
     align-items: flex-end;
     // text-align: right;
   }
@@ -30,56 +30,56 @@ $main: #1c1c1c;
   text-align: center;
   margin: 0 16px;
 
-  @media (min-width: 768px)  {
+  @media (min-width: 768px) {
     margin: 0 100px;
   }
 
-  @media (min-width: 1200px)  {
+  @media (min-width: 1200px) {
     text-align: right;
     margin: 0;
   }
 }
 
 .aboutTextContainer {
-  text-transform: uppercase;
   background-color: #fff;
   opacity: 0.8;
   border-radius: 6px;
   padding: 30px;
   margin: 0 16px;
   font-weight: 400;
-  
+
   p {
     color: $main;
   }
-  
-  span {
+
+  .startText {
+    text-transform: uppercase;
     padding-right: 5px;
     font-weight: 900;
     font-size: 18px;
 
-    @media (min-width: 480px)  {
+    @media (min-width: 480px) {
       font-size: 21px;
     }
   }
-  
-  @media (min-width: 480px)  {
+
+  @media (min-width: 480px) {
     margin: 0 34px;
   }
 
-  @media (min-width: 768px)  {
+  @media (min-width: 768px) {
     padding: 40px;
     margin: 0 100px;
   }
-  
-  @media (min-width: 1200px)  {
+
+  @media (min-width: 1200px) {
     margin: 0;
     width: 700px;
   }
 }
 
 .separator {
-  @media (min-width: 1200px)  {
+  @media (min-width: 1200px) {
     border-left: 2px solid $main;
     padding-left: 20px;
   }

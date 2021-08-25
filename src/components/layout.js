@@ -64,7 +64,12 @@ const Layout = ({ children, isMobile }) => {
             </div>
           </div>
           <div className="footerRt">
-            <FontAwesomeIcon icon={faLinkedinIn} className="social" />
+            <a href="https://www.linkedin.com/in/hae-landscape-consultants-06a20021a/">
+              <FontAwesomeIcon
+                icon={faLinkedinIn}
+                className="social"
+              />
+            </a>
           </div>
         </div>
       </footer>
