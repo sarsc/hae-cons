@@ -19,21 +19,18 @@ class ContactForm extends React.Component {
     };
   }
 
-  // isFormValid = () => {
-  //  const err = Object.values(this.state.errors)
-  // }
-deactivateSubmit = () => {
-  const {
-    errors,
-    email,
-    message,
-    name,
-  } = this.state;
-  const hasErrors = Object.values(errors).find((err) => err.length > 0);
-  const hasEmptyField = [email, message, name].includes('');
+  deactivateSubmit = () => {
+    const {
+      errors,
+      email,
+      message,
+      name,
+    } = this.state;
+    const hasErrors = Object.values(errors).find((err) => err.length > 0);
+    const hasEmptyField = [email, message, name].includes('');
 
-  return hasErrors || hasEmptyField;
-}
+    return hasErrors || hasEmptyField;
+  }
 
   handleSubmit = (event) => {
     event.preventDefault();
@@ -85,12 +82,6 @@ deactivateSubmit = () => {
 
     this.setState({ errors });
   }
-
-  // handleFocus = () => {
-  //   this.setState((prevState) => (
-  //     { errors: { ...prevState.errors, nameErr: '' } }
-  //   ));
-  // }
 
   handleChange = (event) => {
     const { value, id } = event.target;

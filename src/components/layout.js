@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
-// import CookieConsent, { getCookieConsentValue } from 'react-cookie-consent';
 import { Link } from 'gatsby';
 import SEO from './seo';
 import Header from './header';
